@@ -1,6 +1,6 @@
 ---
 title: '5 Attributes of Healthy Backlogs'
-date: 2018-11-03T12:13:00.000+11:00
+date: 2018-11-17T12:13:00.000+11:00
 draft: false
 tags : [agile]
 ---
@@ -62,3 +62,9 @@ Finally, a healthy Product Backlog has to be collaborative.
 A Product Owner isn't a Product _Backlog_ Owner. Anyone in the team should be able to contribute new items to the backlog and to collaborate with the Product Owner to further improve items not yet started. The Product Owner's responsibility is to maximise the value delivered by the development team. Encouraging collaboration and contributions from the development team further improves their morale and can be a surprising source of new, valuable ideas that the Product Owner may not have considered.
 
 Similarly, being open to change includes removing items. In long-lived backlogs it's not unusual to have many items which are no longer relevant, where the original context has been forgotten, or where the potential value has eroded over time. Items that are poorly worded, not transparent, are simply not understandable by the people that are now on the team. Don't be afraid to delete these items. Keep the weeds out of the garden!
+
+## A Big Thank You
+I would like to thank Richard Banks for helping me write this blog post. You can see how we collaborated on this blog post on these pull requests.
+
+- https://github.com/RaphHaddad/blog/pull/1
+- https://github.com/RaphHaddad/blog/pull/2
