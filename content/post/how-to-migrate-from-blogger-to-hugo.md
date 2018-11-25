@@ -53,7 +53,7 @@ git init
 
 Create a `.gitignore` file and add the folder `public` to it.
 
-Follow the [quick-start](https://gohugo.io/getting-started/quick-start/) guide on the Hugo website up until Step 4. This guide will scafold your new Hugo blog.
+Follow the [quick-start](https://gohugo.io/getting-started/quick-start/) guide on the Hugo website up until Step 4. This guide will scaffold your new Hugo blog.
 
 Instead of creating a new post. Copy and paste everything in the `out` directory above into the `content/post` folder.
 
@@ -73,7 +73,7 @@ git commit -am 'Add my converted blog posts from blogger'
 ### Manual Cleanup
 After the initial migration with blog2md I had to go through all my blog posts and do abit of cleaning up. Things included
 
-- Removing trailing and uneeded spaces
+- Removing trailing and unneeded spaces
 - Standardising header weights
 - Using the correct header weights (in some blog posts I had skipped weights completely)
 - Fixing up images
@@ -83,7 +83,7 @@ Make sure you commit your changes at this point.
 Any images you may have on your blog posts will still link to the blogger domain. You will need to download them manually and put them in your `static` folder to be served.
 
 ### Modified Theme
-The Hugo tutorial uses the [Ananke theme](https://github.com/budparr/gohugo-theme-ananke). I decided to use a modified [Kiera theme](https://github.com/avianto/hugo-kiera) instead, so I [forked it](https://github.com/RaphHaddad/hugo-kiera), modified it, and added it as a git submodule to my `blog` git repository. This means, I can use git to track any changes from the original [Kiera](https://github.com/avianto/hugo-kiera) repository and just integrate my changes ontop of them without touching my `blog` repository. You can see how this works on my [GitHub blog repository](https://github.com/RaphHaddad/blog/tree/master/themes).
+The Hugo tutorial uses the [Ananke theme](https://github.com/budparr/gohugo-theme-ananke). I decided to use a modified [Kiera theme](https://github.com/avianto/hugo-kiera) instead, so I [forked it](https://github.com/RaphHaddad/hugo-kiera), modified it, and added it as a git submodule to my `blog` git repository. This means, I can use git to track any changes from the original [Kiera](https://github.com/avianto/hugo-kiera) repository and just integrate my changes on top of them without touching my `blog` repository. You can see how this works on my [GitHub blog repository](https://github.com/RaphHaddad/blog/tree/master/themes).
 
 ### Perma Links
 I wanted to keep Perma Links on my blog. So I added the settings below to my `config.toml` file.
