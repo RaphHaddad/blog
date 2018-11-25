@@ -4,9 +4,9 @@ date: 2018-11-17T12:13:00.000+11:00
 draft: false
 tags : [agile]
 ---
-Having a healthy backlog creates an environment with good morale, high confidence, and positive energy. Healthy backlogs make visible business goals, provides a sense of security, and reduces the risk of disruption from random, unplanned requests. All these things make me and the team I'm working with feel good.
+Having a healthy backlog creates an environment with good morale, high confidence, and positive energy. Healthy backlogs make business goals visible, provide a sense of security, and reduce the risk of disruption from random, unplanned requests. All these things make me, and the team I'm working with, feel good.
 
-In this post, I want to explain to you the specifics of what makes a backlog healthy.
+In this post, I want to explain to 5 key attributes I look for when deciding if a backlog is healthy or not.
 
 ## Transparent
 If only part of the team and/or the Product Owner can understand the items on the backlog then it is not transparent. Transparency requires an equal, shared understanding of the items in the backlog by all team members.
