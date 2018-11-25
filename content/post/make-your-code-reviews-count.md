@@ -5,7 +5,6 @@ draft: false
 tags : [software engineering philosophy, software engineering]
 ---
 
-
 The value in PRs (or code reviews in general) is more than just ensuring good code is pushed into the main-line branch. There's more to a PR in my opinion. This includes  
   
 - Learning from others  
