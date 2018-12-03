@@ -5,3 +5,10 @@ theme = "kiera"
 
 [permalinks]
   post = "/:year/:month/:title/"
+
+[menu]
+  [[menu.main]]
+    identifier = "Home"
+    name = "Home"
+    url = "https://raph.ws"
+    weight = -110
