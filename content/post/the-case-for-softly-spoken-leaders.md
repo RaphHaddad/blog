@@ -6,7 +6,7 @@ tags : [team work, leadership]
 ---
 We stereotype leaders as being loud and boisterous(I'm guilty of this too). We value those leaders who can get up in front of a crowd of hundreds of people and broadcast to thousands more. Reflecting on my own life, whether this be professionally, community work, or sports clubs I feel that I haven't valued the effectiveness of softly spoken leaders as much as I should. All organisations need a combination of leaders from both categories and in between (it's a spectrum). Below is my reasoning on the importance and effectiveness of softly spoken leaders based on those softly spoken leaders that I've had the privilege to work with.
 
-## Silence as an Opportunity for Reflection and Introspection
+## Silence is an Opportunity for Reflection and Introspection
 Softly spoken leaders don't see silence as weakness but an opportunity to allow the people they work with space for introspection. They understand that the people they work with have many things happening in their lives: kids, relationships, personal issues, and career problems. This space allows examination of current situations and helps focus on the problems that are the most pressing without diverting too much energy or being anxious about other things. That is, softly spoken leaders allow the people they work with to see the big picture and address the most important issues they're experiencing now.
 
 ## Clarity Through Economy of Words
