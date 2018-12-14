@@ -1,6 +1,6 @@
 ---
 title: 'The Case for Softly Spoken Leaders'
-date: 2018-12-12T00:00:00.000+10:00
+date: 2018-12-15T00:00:00.000+10:00
 draft: false
 tags : [team work, leadership]
 ---
