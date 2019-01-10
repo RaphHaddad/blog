@@ -1,7 +1,7 @@
 ---
 title: 'My Top 5 Productivity Hacks'
-date: 2019-01-09T00:00:00.000+11:00
-draft: true
+date: 2019-01-10T00:00:00.000+11:00
+draft: false
 ---
 
 Some people are naturally productive, efficient, and focus for long periods of time. For me, I need to do certain things to help me focus and be productive. I've tinkered with several things in the past but I believe I've finally found my top 5 productivity hacks. These may help you too and I've explained them below:
