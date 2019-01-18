@@ -31,7 +31,7 @@ Migrations work by having a set of scripts in a folder that will grow over time.
 
 When dealing with programmability objects in DbUp, you can choose to set scripts to `Always` run, this means they will run against the target database on every deployment, these scripts will need to drop objects and re-create them. If you're doing this with tables there will be data loss so I recommend against it.
 
-If you're frequently modifying fields on SQL Tables, you will need to commit multiple `SQL` files with `ALTER` statements for each set of changes. On the other hand, SQL Projects that generate DACPACs will have all stored procedures, functions, or tables as `CREATE` statements, so if you need to modify them, you'll modify the `CREATE` statement on the original file. This gives you a git history of the stored procedure or table just like any code file.
+If you're frequently modifying fields on SQL Tables, you will need to commit multiple `SQL` files with `ALTER` statements for each set of changes. On the other hand, SQL Projects that generate DACPACs will have all stored procedures, functions, or tables as `CREATE` statements, so if you need to modify them, you'll modify the `CREATE` statement on the original file. This gives you a git history of SQL Object just like any code file.
 
 Over time, you could have hundreds of SQL Scripts in a migrations folder. This is why in terms of maintainability __DACPACs__ win!
 
@@ -79,9 +79,10 @@ If you answered 'yes' to most of the above, then you should consider taking a mi
 - Is the database used by several applications?
 - Will I need to tune database indexes?
 - Do I want greater control of data types and relationships?
+- Will my table schemas be changing often?
 
 If you answered 'yes' to most of the above, then you should consider using DACPACs.
 
 You can always opt for a migrations approach while your database is simple and easily convert it to a SQL Project (which builds a DACPAC) when your database becomes more complex. Just reverse engineer your database by generating `CREATE` scripts using [SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017) and add them to a SQL Project.
 
-A definite answer to which approach is best would probably not do every scenario justice, as such, I would encourage you to learn both approaches to properly understand which approach to choose. Whatever decision you make, it's easy to migrate from one to the other. What's important is that you are aware of the value that both approaches provide.
+A definite answer to which approach is best would probably not do every scenario justice, as such, I would encourage you to learn both approaches to properly understand which to choose. Whatever decision you make, it's easy to migrate from one to the other. What's important is that you are aware of the value that both approaches provide.
