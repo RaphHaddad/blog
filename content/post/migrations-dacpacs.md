@@ -15,6 +15,8 @@ The migrations approach involves running a set of scripts against a target datab
 ### DACPAC
 A DACPAC (Data-tier Application Component Package) is a package that contains the _state_ of your database. It is generated from tools such as SQL Projects that you can create from Visual Studio 2017. From a code perspective, this means a set of `CREATE` scripts for all your entities. Occasionally, when you modify an object the `CREATE` scripts may not accurately reflect the state of the database (for example: when you rename a column) in this case a _refactor log_ is kept in the DACPAC.
 
+![Which route to take?](/images/migrations-vs-dacpacs-which-steps.jpg) "Which route to take? Credit: [Greg Jeanneau](https://unsplash.com/@gregjeanneau)"
+
 ## Criteria 1: Ease of Setting Up
 You can easily setup migrations to run on your application's entry point, they are included in ORM (object relational mapper) frameworks (such as Entity Framework) and you'll be able to execute your migrations with one method call.
 
