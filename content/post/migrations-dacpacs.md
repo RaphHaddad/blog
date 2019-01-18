@@ -22,12 +22,12 @@ You can easily setup migrations to run on your application's entry point, they a
 
 On the other hand, generating a DACPAC file means creating a new SQL Project that is difficult to reference from your existing application. You'll need to create a step in your release pipeline to ensure that it is applied and this may mean an added overhead when trying to initially get setup.
 
-__Migrations__ have the edge here, Simply include DbUp or Entity Framework in your solution, modify your entry point to execute migrations and that's it!
+__Migrations__ have the edge here, simply include DbUp or Entity Framework in your solution, modify your entry point to execute migrations and that's it!
 
 ## Criteria 2: Code Maintainability
-Migrations work by having a set of scripts in a folder that may grow over time. When modifying an existing SQL Database object, you'll need to create a new file for each set of changes that get deployed. In DbUp, you can choose to set scripts to `Always` run which means they will run against the target database every single deployment, however, these scripts will need to drop objects and re-create them. When dealing with programmability objects this is ok, however, if you're doing this with tables there will be data-loss.
+Migrations work by having a set of scripts in a folder that may grow over time. When modifying an existing SQL Database object, you'll need to create a new file for each set of changes that get deployed. In DbUp, you can choose to set scripts to `Always` run which means they will run against the target database every single deployment, however, these scripts will need to drop objects and re-create them. This is fine when dealing with programmability objects, but if you're doing this with tables there will be data loss.
 
-If you're frequently modifying a few lines of code on SQL Objects you will need to commit multiple `SQL` files, as you'll need a separate `ALTER` statement for each set of changes. On the other hand, SQL Projects that generate DACPACs will have all stored procedures, functions, or tables as `CREATE` statements, so if you need to modify them, you'll modify the `CREATE` statement on the original file. This gives you a git history of the stored procedure or table just like any code file.
+If you're frequently modifying fields on SQL Tables, you will need to commit multiple `SQL` files with `ALTER` statements for each set of changes. On the other hand, SQL Projects that generate DACPACs will have all stored procedures, functions, or tables as `CREATE` statements, so if you need to modify them, you'll modify the `CREATE` statement on the original file. This gives you a git history of the stored procedure or table just like any code file.
 
 Over time, you could have hundreds of SQL Scripts in a migrations folder. This is why in terms of maintainability __DACPACs__ win!
 
@@ -45,7 +45,7 @@ Using a SQL Project to generate a DACPAC is a great experience as well. The tool
 
 Migrations definitely provide an easy development experience. Easy, does not necessarily mean better though and there are problems associated with the development experience using migrations. Code is read a lot more than it is written, and the underlying structure of a database is better understood using SQL Projects than they are using migrations. 
 
-For example, if you've chosen a migration approach and a field is introduced into a previously created table, you will be reading two separate migrations in isolation to each other, however, using SQL Projects everything is declared as `CREATE` statements so you will read the definition of the table from one file.
+For example, if you've chosen a migration approach and a field is introduced into a previously created table, you will be reading two separate migrations in isolation to each other, however, using SQL Projects, everything is declared as `CREATE` statements so you will read the definition of the table from one file.
 
 Initially, I though the development experience of using migrations was better because it was simpler. After several months of using SQL Projects though, I would say that __DACPACs__ win on this criteria.
 
