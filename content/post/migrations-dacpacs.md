@@ -10,7 +10,9 @@ Dealing with SQL Database changes on production should always be automated. Ther
 Below is an explanation of the two approaches. Feel free to skip this section and go straight to the next section if you are aware of the two approaches.
 
 ### Migrations
-The migrations approach involves running a set of scripts against a target database in a predetermined order. The target database will have a meta table with the scripts that have already been run, so that they are not run again. Popular .NET tools include [DbUp](https://dbup.github.io/) and [Entity Framework Migrations](https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/migrations-and-deployment-with-the-entity-framework-in-an-asp-net-mvc-application). 
+The migrations approach involves running a set of scripts against a target database in a predetermined order. The target database will have a meta table with the scripts that have already been run, so that they are not run again. Some tools allow you to specify certain scripts to be run regardless if they've been run previously or not.
+
+Popular .NET tools include [DbUp](https://dbup.github.io/) and [Entity Framework Migrations](https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/migrations-and-deployment-with-the-entity-framework-in-an-asp-net-mvc-application). 
 
 ### DACPAC
 A DACPAC (Data-tier Application Component Package) is a package that contains the _state_ of your database. It is generated from tools such as SQL Projects that you can create from Visual Studio 2017. From a code perspective, this means a set of `CREATE` scripts for all your entities. Occasionally, when you modify an object the `CREATE` scripts may not accurately reflect the state of the database (for example: when you rename a column) in this case a _refactor log_ is kept in the DACPAC.
@@ -25,7 +27,9 @@ On the other hand, generating a DACPAC file means creating a new SQL Project tha
 __Migrations__ have the edge here, simply include DbUp or Entity Framework in your solution, modify your entry point to execute migrations and that's it!
 
 ## Criteria 2: Code Maintainability
-Migrations work by having a set of scripts in a folder that may grow over time. When modifying an existing SQL Database object, you'll need to create a new file for each set of changes that get deployed. In DbUp, you can choose to set scripts to `Always` run which means they will run against the target database every single deployment, however, these scripts will need to drop objects and re-create them. This is fine when dealing with programmability objects, but if you're doing this with tables there will be data loss.
+Migrations work by having a set of scripts in a folder that will grow over time. When modifying an existing SQL Database object, you'll need to create a new file for each set of changes that get deployed. 
+
+When dealing with programmability objects in DbUp, you can choose to set scripts to `Always` run, this means they will run against the target database on every deployment, these scripts will need to drop objects and re-create them. If you're doing this with tables there will be data loss so I recommend against it.
 
 If you're frequently modifying fields on SQL Tables, you will need to commit multiple `SQL` files with `ALTER` statements for each set of changes. On the other hand, SQL Projects that generate DACPACs will have all stored procedures, functions, or tables as `CREATE` statements, so if you need to modify them, you'll modify the `CREATE` statement on the original file. This gives you a git history of the stored procedure or table just like any code file.
 
