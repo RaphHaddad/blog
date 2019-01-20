@@ -10,12 +10,12 @@ Dealing with SQL Database changes on production should always be automated. Ther
 Below is an explanation of the two approaches. Feel free to skip this section and go straight to the next section if you are aware of the two approaches.
 
 ### Migrations
-The migrations approach involves running a set of scripts against a target database in a predetermined order. The target database will have a meta table with the scripts that have already been run, so that they are not run again. Some tools allow you to specify certain scripts to be run regardless if they've been run previously or not.
+The migrations approach involves running a set of scripts against a target database in a predetermined order. The target database will have a _migrations meta table_ with the scripts that have already been run, so that they are not run again. Some tools allow you to specify certain scripts to be run regardless if they've been run previously or not.
 
 Popular .NET tools include [DbUp](https://dbup.github.io/) and [Entity Framework Migrations](https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/migrations-and-deployment-with-the-entity-framework-in-an-asp-net-mvc-application). 
 
 ### DACPAC
-A DACPAC (Data-tier Application Component Package) is a package that contains the _state_ of your database. It is generated from tools such as SQL Projects that you can create from Visual Studio 2017. From a code perspective, this means a set of `CREATE` scripts for all your entities. Occasionally, when you modify an object the `CREATE` scripts may not accurately reflect the state of the database (for example: when you rename a column) in this case a _refactor log_ is kept in the DACPAC.
+A DACPAC (Data-tier Application Component Package) is a package that contains the _state_ of your database. It is generated from tools such as SQL Projects that you can create from Visual Studio 2017. From a code perspective, this means a set of `CREATE` scripts for all your entities. Occasionally, when you modify an object the `CREATE` scripts may not accurately reflect the state of the database (for example: when you rename a column) in this case a _refactor log_ is kept in the DACPAC. This _refactor log_ is similar to a _migrations meta table_.
 
 ![Which route to take?](/images/migrations-vs-dacpacs-which-steps.jpg) Which route to take? Credit: [Greg Jeanneau](https://unsplash.com/@gregjeanneau)
 
@@ -31,7 +31,7 @@ Migrations work by having a set of scripts in a folder that will grow over time.
 
 When dealing with programmability objects in DbUp, you can choose to set scripts to `Always` run, this means they will run against the target database on every deployment, these scripts will need to drop objects and re-create them. If you're doing this with tables there will be data loss so I recommend against it.
 
-If you're frequently modifying fields on SQL Tables, you will need to commit multiple `SQL` files with `ALTER` statements for each set of changes. On the other hand, SQL Projects that generate DACPACs will have all stored procedures, functions, or tables as `CREATE` statements, so if you need to modify them, you'll modify the `CREATE` statement on the original file. This gives you a git history of SQL Object just like any code file.
+If you're frequently modifying fields on SQL Tables, you will need to commit multiple `SQL` files with `ALTER` statements for each set of changes. On the other hand, SQL Projects that generate DACPACs will have all stored procedures, functions, or tables as `CREATE` statements, so if you need to modify them, you'll modify the `CREATE` statement on the original file. This gives you a git history of SQL Objects just like any code file.
 
 Over time, you could have hundreds of SQL Scripts in a migrations folder. This is why in terms of maintainability __DACPACs__ win!
 
@@ -40,12 +40,12 @@ Migrations are easy to integrate into a release pipeline. If you use Entity Fram
 
 Likewise, DACPACs are easy to integrate into a release pipeline. The tool `SqlPackage.exe` is used to deploy a DACPAC to a target database. This tool comes with SQL Server 2017 or Visual Studio 2017.
 
-It was hard to decide a winner here, but I'll choose __Migrations__ only because it's a bit more difficult getting `SqlPackage.exe` on a build agent. Migrations though, are usually self-contained or come with the standard `dotnet` command line tool.
+It was hard to decide a winner here, but I'll choose __migrations__ only because it's a bit more difficult getting `SqlPackage.exe` on a build agent. Migrations though, are usually self-contained or come with the standard `dotnet` command line tool.
  
 ## Criteria 4: Development Experience
 The development experience with migrations is great, all you do is add migrations to your migration folder! For example: you can modify a field on your ORM classes and create a migration script for it. If you're using Entity Framework migrations the  `dotnet ef database` command scaffolds the migrations for you, even easier! 
 
-Using a SQL Project to generate a DACPAC is a great experience as well. The tooling allows you to create Pre and Post deployment scripts, rename fields, write unit tests, add fields, and user permissions. Basically, anything you can do on a database, you'll be able to do with SQL Projects. In this case, the development experience may not always be tightly-coupled to your application code, but that's not a bad thing. In fact, it can be a positive thing, especially if your database is used by multiple applications.
+Using a SQL Project to generate a DACPAC is a great experience as well. The tooling allows you to create a pre and/or post deployment scripts, rename fields, write unit tests, add fields, and user permissions. Basically, anything you can do on a database, you'll be able to do with SQL Projects. In this case, the development experience may not always be tightly-coupled to your application code, but that's not a bad thing. In fact, it can be a positive thing, especially if your database is used by multiple applications.
 
 Migrations definitely provide an easy development experience. Easy, does not necessarily mean better though and there are problems associated with the development experience using migrations. Code is read a lot more than it is written, and the underlying structure of a database is better understood using SQL Projects than they are using migrations. 
 
@@ -72,13 +72,14 @@ Each approach has its advantages and to help you pick which approach is right fo
 - Is my application the only one accessing the database?
 - Am I using my SQL Database only as a datastore?
 - Will I only be using an ORM to access to the database?
+- Am I early on in my development cycle such that my data is changing frequently and I'll need to do clean-up often?
 
 If you answered 'yes' to most of the above, then you should consider taking a migration approach.
 
 - Am I reliant on stored procedures?
 - Is the database used by several applications?
 - Will I need to tune database indexes?
-- Do I want greater control of data types and relationships?
+- Do I want greater control and visiblity of data types and relationships?
 - Will my table schemas be changing often?
 
 If you answered 'yes' to most of the above, then you should consider using DACPACs.
