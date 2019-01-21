@@ -72,7 +72,8 @@ Each approach has its advantages and to help you pick which approach is right fo
 - Is my application the only one accessing the database?
 - Am I using my SQL Database only as a datastore?
 - Will I only be using an ORM to access to the database?
-- Am I early on in my development cycle such that my data is changing frequently and I'll need to do clean-up often?
+- Am I early on in my development cycle and need to validate a business assumption? 
+- Will data clean-up be a regular occurance?
 
 If you answered 'yes' to most of the above, then you should consider taking a migration approach.
 
@@ -81,6 +82,7 @@ If you answered 'yes' to most of the above, then you should consider taking a mi
 - Will I need to tune database indexes?
 - Do I want greater control and visiblity of data types and relationships?
 - Will my table schemas be changing often?
+- Do you have complicated roles and security? 
 
 If you answered 'yes' to most of the above, then you should consider using DACPACs.
 
