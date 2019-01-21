@@ -76,7 +76,7 @@ Each approach has its advantages and to help you pick which approach is right fo
 
 If you answered 'yes' to most of the above, then you should consider taking a migration approach.
 
-- Am I reliant on stored procedures?
+- Am I reliant on stored procedures that need validation and testing?
 - Is the database used by several applications?
 - Will I need to tune database indexes?
 - Do I want greater control and visiblity of data types and relationships?
