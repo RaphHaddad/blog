@@ -1,7 +1,7 @@
 ---
 title: 'Migrations VS DACPACs'
-date: 2019-01-18T00:00:00.000+11:00
-draft: true
+date: 2019-01-21T00:00:00.000+11:00
+draft: false
 ---
 
 Dealing with SQL Database changes on production should always be automated. There are various techniques we can use and today I will compare two popular approaches. A migrations approach and a DACPAC approach.
