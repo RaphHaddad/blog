@@ -73,14 +73,14 @@ Each approach has its advantages and to help you pick which approach is right fo
 - Am I using my SQL Database only as a datastore?
 - Will I only be using an ORM to access to the database?
 - Am I early on in my development cycle and need to validate a business assumption? 
-- Will data clean-up be a regular occurance?
+- Will data clean-up be a regular occurrence?
 
 If you answered 'yes' to most of the above, then you should consider taking a migration approach.
 
 - Am I reliant on programmability objects that need validation and testing?
 - Is the database used by several applications?
 - Will I need to tune database indexes?
-- Do I want greater control and visiblity of data types and relationships?
+- Do I want greater control and visibility of data types and relationships?
 - Will my table schemas be changing often?
 - Will I have complicated roles and security that require database level visibility?
 
