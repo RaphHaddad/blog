@@ -82,7 +82,7 @@ If you answered 'yes' to most of the above, then you should consider taking a mi
 - Will I need to tune database indexes?
 - Do I want greater control and visiblity of data types and relationships?
 - Will my table schemas be changing often?
-- Do you have complicated roles and security? 
+- Will I have complicated roles and security that require database level visibility?
 
 If you answered 'yes' to most of the above, then you should consider using DACPACs.
 
