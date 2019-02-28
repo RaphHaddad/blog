@@ -11,9 +11,9 @@ In the [Part I](/2018/07/reboot-devops) we discussed how DevOps isn't about solv
 
 *Magnifying glass source: Wikimedia commons*
 
-Today we will speak about how monitoring and observability can increase our confidence to enable us to release more often.
+This post will focus on how monitoring and observability can increase our confidence to enable us to release more often.
 
-Monitoring an application is the surfacing of the metrics that allow us to see whether a system is operable, not operable, or in an exhausted state. On a basic level, this may mean CPU usage, memory usage, network throughput, errors, and exceptions. What monitoring seeks to provide is whether a system (or service within it) is working or not at any one point in time. Having the ability to visualise this data in production builds confidence, as knowing that a system is working or not at any point after releasing is better than finding out through external sources.  
+Monitoring an application is the surfacing of the metrics that allow us to see whether a system is operable, not operable, or in an exhausted state. On a basic level, this may mean CPU usage, memory usage, network throughput, errors, and exceptions. What monitoring seeks to provide is whether a system (or service within it) is working or not at any one point in time. Having the ability to visualise this data in production builds confidence, knowing that a system is working or not at any point after releasing is better than finding out through external sources.
 
 Monitoring is something done on a system, observability is something that the system is. You have to actively make the system observable. Where monitoring is seeing the metrics of the system, observability is raising the right metrics to the surface. This may mean a few things: does your centralised message brokering platform provide the ability to log? Are logs among your services formatted consistently? Which business actions are important enough to warrant making observable?  
 
@@ -22,8 +22,8 @@ Observability is about asking the right questions and by asking the right questi
 For example:
 
 _Why does my CPU usuage go up between 2-3pm even though my orders go down?_  
-In order to be able to answer the question above we will need to replicate the state as well as control and data flow of our application in production at that specific time. If we're able to replicate this, then we're able to debug issues easier, then fix them. However, it's not only about fixing issues, it's about fixing potential issues. This is where confidence is really built.
+In order to be able to answer the question above we will need to replicate the state as well as control and data flow of our application in production, at that specific time. If we're able to replicate this, then we're able to debug issues easier, then fix them. However, it's not only about fixing issues, it's about fixing potential issues. This is where confidence is really built.
 
-Finally, monitoring and observability build confidence because we are able to take the uncontrolled aspects of a system and raise them to the surface. Enabling us to debug and replicate issues as they are in production to take the guesswork out of fixing issues.  
+Finally, monitoring and observability build confidence because we are able to take the uncontrolled aspects of a system and raise them to the surface. Enabling us to debug and replicate issues as they are in production to take the guesswork out of fixing issues.
 
 Thank you for reading! I hope to post part III in the next few weeks.
