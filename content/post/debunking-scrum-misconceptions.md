@@ -36,4 +36,4 @@ What's more important about scale is not end state but the continuous learning e
 
 I've spoken about this concept of improvement in my previous post: [transformation, reorganisation, and continuous improvement](https://blog.raph.ws/2018/03/transformation-reorganisation-and-continuous-improvement/)
 
-Finally, I woud like to encourage you to examine claims about Scrum carefully. There are many misconceptions about Scrum and agile that are false and sensationalist. The best way to fully examine these claims is to understand Scrum itself. A good place to start, is to read the Scrum guide yourself and compare any claims made with this actual guide
+Finally, I would like to encourage you to examine claims about Scrum carefully. There are many misconceptions about Scrum and agile that are false and sensationalist. The best way to fully examine these claims is to understand Scrum itself. A good place to start, is to read the Scrum guide yourself and compare any claims made with this actual guide
