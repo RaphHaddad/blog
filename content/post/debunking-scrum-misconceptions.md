@@ -20,12 +20,12 @@ Proponents of this argument claim that the Sprint forecast is just an avenue to 
 
 A Sprint forecast should have a _goal_ and this goal can be used to align to a wider [One Metric That Matters (OMTM)](http://leananalyticsbook.com/one-metric-that-matters/). Scrum does not stop this lean thinking, in fact the Sprint and its goal can create an environment where lean thinking is made a priority. Using a Sprint goal helps teams focus on _why_ certain items are being delivered. The Sprint itself then becomes an avenue to inspect and adapt to find a product/market fit that can be exploited. The Sprint should not be used to deliver a shopping list of items but to verify and learn whether the current direction shifts the One Metric That Matters (OMTM).
 
-## You can't do system thinking with Scrum
-Failing to view an organisation from the prism of system thinking isn't the fault of Scrum, nor is implementing Scrum as a local optimisation the fault of Scrum. Any framework or methodology can be implemented as a local optimisation or isolated away from the rest of the organisation: Scrum, Kanban, or CMMI.
+## You can't do systems thinking with Scrum
+Failing to view an organisation from the prism of systems thinking isn't the fault of Scrum, nor is implementing Scrum as a local optimisation the fault of Scrum. Any framework or methodology can be implemented as a local optimisation or isolated away from the rest of the organisation: Scrum, Kanban, or CMMI.
 
-Scrum implemented well enables system thinking by expanding Scrum and agile values of transparency and learning into the wider organisation. Good Scrum Masters are able to facilitate system thinking across an organisation by realising help isn't limited to the direct Scrum Team but throughout an organisation. There's no point of being agile at a development team level, when the bottleneck exists in the wider organisation.
+Scrum implemented well enables systems thinking by expanding Scrum and agile values of transparency and learning into the wider organisation. Good Scrum Masters are able to facilitate systems thinking across an organisation by realising help isn't limited to the direct Scrum Team but throughout an organisation. There's no point of being agile at a development team level, when the bottleneck exists in the wider organisation.
 
-Some of the best Scrum Masters I have worked with were able to coach their teams to the extent that they had more time available to coach the wider organisation. Scrum Masters (and team members) that do what Stephen Covey calls influencing the first circle then expanding on that are definitely doing system thinking.
+Some of the best Scrum Masters I have worked with were able to coach their teams to the extent that they had more time available to coach the wider organisation. Scrum Masters (and team members) that do what Stephen Covey calls influencing the first circle then expanding on that are definitely doing systems thinking.
 
 In some medium sized organisations I've worked with, every one up until the CEO knew which Sprint the development team was up to. Scrum enables systems thinking by helping to identify frictions within a delivery team as well as outside it. It starts with the first circle of influence then expands out. 
 
