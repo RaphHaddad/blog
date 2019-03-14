@@ -18,9 +18,10 @@ So you may have been speaking at MeetUps, internal company events and/or Toastma
 
 *source: [Sam Ritchie](https://twitter.com/FakeSamRitchie) taking a picture of me @ Perth*
 
-Be prepared to have the talk that you least expect picked  
+## Be prepared to have the talk that you least expect picked  
 I had submitted a few talks about newer technologies and big data. However, none of these had been chosen. Instead, I had a talk about automated testing chosen, a talk about best practice and something that experienced developers have probably heard before but probably wish to hear again. **That's OK, if you're talk was voted in or selected by a panel, it probably means people want to see you succeed and are interested in what you have to say.**  
-Practice, Practice, Practice!  
+
+## Practice, Practice, Practice!  
 I can't emphasis this enough. You may have gotten good at giving 15-20 minute talks at MeetUps and user groups, but a 45 minute talk is a lot more difficult. Your mouth will get dry, you may loose your chain of thought easier and **it's physically more demanding**. I hadn't practiced a lot prior to my DDD Melbourne talk and I think it was obvious to the audience. I did a bit more practice at DDD Perth and I think I did a lot better.  
 
 ## Live coding  
