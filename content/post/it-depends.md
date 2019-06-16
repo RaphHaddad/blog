@@ -2,7 +2,7 @@
 title: 'It depends'
 date: 2018-07-02T12:33:00.000+10:00
 draft: false
-tags : [team work, consulting, agile]
+tags : [team work, consulting, agile, language]
 ---
 
 A few months ago I wrote a post [I Don’t Know](/2018/01/i-dont-know). It was a post that explained why being honest about things you don’t know is important, as it builds trust amongst team members. I also explained why saying you don’t know something and following it up with a desire to actually take action, in order to gain that knowledge, is important. Today, I will talk about the words “it depends”.
