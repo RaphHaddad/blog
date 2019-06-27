@@ -1,6 +1,6 @@
 ---
 title: 'Apologising Less Frequently But More Genuinely'
-date: 2019-06-17T00:00:00.000+10:00
+date: 2019-06-27T00:00:00.000+10:00
 draft: false
 tags : [language]
 ---
