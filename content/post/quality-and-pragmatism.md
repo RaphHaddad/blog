@@ -5,12 +5,10 @@ draft: false
 tags : [agile]
 ---
 
-
 Pragmatism and quality are two things that are often pitted against each other when delivering software. When I think of pragmatism, I think what things can be avoided in order to deliver software to our customer sooner. When I think quality, I think a whole range of things including: maintainability, scalability, and interoperability of a system to name a few. It may also mean things that may not directly relate to the system for example: documentation, support, and user customisation.  
 
 [![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Seesaw_%28712%29_-_The_Noun_Project.svg/500px-Seesaw_%28712%29_-_The_Noun_Project.svg.png)](https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Seesaw_%28712%29_-_The_Noun_Project.svg/500px-Seesaw_%28712%29_-_The_Noun_Project.svg.png)
 *Seesaw Source: Wikimedia*
-
 
 At times we need to strike a balance between quality and delivery. This is called pragmatism. The art of striking this balance is difficult. Each software engineer’s experience is different, many engineers have been burnt by similar things. Some have been burnt by different things. As a team, it’s hard to be pragmatic because of these varying experiences.  
 
@@ -18,7 +16,7 @@ Deciding which aspects of quality to keep and which to remove must be based on a
 
 ## User Demography
 ### Volume of users
-Whilst technological purity suggests that we have to make a system scalable. We have to assess whether this is worth it in the first place. Pragmatic development would ask the question of what is the volume of users to begin with, prior to actually putting in the effort to making an application scalable. There's no point of catering for 100,000,000 requests a second when there will only ever be 50 concurrent users in an hour. Ask yourself:
+Technological purity suggests that we have to make a system scalable, as such, we have to assess whether the associated cost is worth it. Pragmatic development would ask the question of what is the volume of users to begin with, prior to actually putting in the effort to making an application scalable. There's no point of catering for 100,000,000 requests a second when there will only ever be 50 concurrent users in an hour. Ask yourself:
 
 - Do I know who my users are?  
 - Is the system limited by another identity provider? What is the maximum user-base of this identity provider?  
@@ -28,13 +26,12 @@ Whilst technological purity suggests that we have to make a system scalable. We 
 The geo-location of users is also important. This often drives things like: localisation, deployment strategies, and legislation driven features like monetary transactions or reporting. In certain systems there is a certainty that most users will be within a limited location. For example: Tax software (whilst some might logon from overseas, this is the exception rather than the rule). In cases like this where we know that our users are within a specific location. We can ask ourselves questions like:
 
 - What time would be the ideal deployment?  
-- Do we even need zero-downtime and A/B or red/green deployment if we're certain our users belong to a subset of time zones?  
-  
+- Do we even need zero-downtime and A/B or red/green deployment if we're certain our users belong to a subset of time zones?
 
 ## Future Modifications
 ### Expected Requirements changes
-Whilst we shouldn't build software with speculation of requirements. It's still important to ask to what extent we must generalise and abstract our code. For example: having sections of our code-base which satisfies legislation that hasn't changed much in the last few years would suggest that the generalisation and abstraction of code can be quite limited. However, having a part of the code-base that sends emails and SMS would need to be generalised as things change quite often for example: the body of the message, message protocol type, and even provider that's used to send messages.  
-  
+We shouldn't build software with the speculation of requirements, however, there should be a certain extent of adapatability and future-resilience in our code. For example: having sections of our code-base which satisfies legislation that hasn't changed in the last few years would suggest that the generalisation and abstraction of code associated with legal rules can be limited. However, having a part of the code-base that sends emails and SMS would need to be generalised as these external services and their requests change often. For example: the body of the message, message protocol type, and even provider that's used to send messages.  
+
 Feature flagging is another technique that can be used to flag whether certain behaviours are floated to our users. The overhead associated with building the architecture for feature flagging increases and it's important to ask questions on the different combinations of features we want to deliver to which users for which tenant. A high quality product would have an architecture that can handle feature flags, however, if the expected future modifications are so low it may not be worth implementing it in the first place.  
 
 ### Content modification
