@@ -17,12 +17,12 @@ I've written previously about some language that I'm actively trying to change i
 *Shrugging. Source: [Wikimedia Commons](https://commons.wikimedia.org/)*
 
 
-Today, I want to highlight some of the other phrases I'll be trying to actively avoid in my dad-to-day speech. These are:  
+Today, I want to highlight some of the other phrases I'll be trying to actively avoid in my day-to-day speech. These are:  
 
 ## "Do you what I mean?”
 I've got a habit of immediately using this phrase after I've explained something. The problem is that I use this phrase when I know that I haven’t explained something properly. Out of fear I place the onus of understanding on the receiver instead of honestly recognising that it is my responsibility to ensure understanding.  
-  
-Instead of saying “do you know what I mean”. What I will start doing is to be honest in conversations and make clear that I’m struggling to explain a theory or concept and to ask people to be patient with me. I will also try to replace it with phrases such as “Have I explained myself properly?”, “Do you need any more information from me?”, and “Please tell me if I didn’t make sense”. These phrases assume that it is my responsibility to explain a concepts. People aren’t mind readers after all!  
+
+Instead of saying “do you know what I mean”. What I will start doing is to be honest in conversations and make clear that I’m struggling to explain a theory or concept and to ask people to be patient with me. I will also try to replace it with phrases such as “Have I explained myself properly?”, “Do you need any more information from me?”, and “Please tell me if I didn’t make sense”. These phrases assume that it is my responsibility to explain concepts. People aren’t mind readers after all!
 
 ## "Yeah?.."
 After I have given my opinion on certain matters, I often follow it up with a question “yeah?”. The problem with using this phrase is that I am blinded to the fact that my opinion could be wrong. By using this phrase, I’ve basically asked for a validation or a rejection of my opinion. A lot of the time though, the world isn’t so black and white and I should be more open to divergent opinions from others.
