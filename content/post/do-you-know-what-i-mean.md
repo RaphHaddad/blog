@@ -19,7 +19,7 @@ I've written previously about some language that I'm actively trying to change i
 
 Today, I want to highlight some of the other phrases I'll be trying to actively avoid in my day-to-day speech. These are:  
 
-## "Do you what I mean?”
+## "Do you know what I mean?”
 I've got a habit of immediately using this phrase after I've explained something. The problem is that I use this phrase when I know that I haven’t explained something properly. Out of fear I place the onus of understanding on the receiver instead of honestly recognising that it is my responsibility to ensure understanding.  
 
 Instead of saying “do you know what I mean”. What I will start doing is to be honest in conversations and make clear that I’m struggling to explain a theory or concept and to ask people to be patient with me. I will also try to replace it with phrases such as “Have I explained myself properly?”, “Do you need any more information from me?”, and “Please tell me if I didn’t make sense”. These phrases assume that it is my responsibility to explain concepts. People aren’t mind readers after all!
