@@ -12,6 +12,8 @@ system. In the case of Kanban delivery this stress may break the flow
 completely, or allow the system to adapt and improve. I recently had a bit of a
 rant about this on Twitter and wish to expand my thinking further:
 
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Focus on TIP (time in progress) as well. Set targets here and improve over time. One of the reasons why post-it notes are cool, is that they fall off the wall. I love physical Kanbans that are unable to fit more post-it notes in their columns than the team&#39;s WIP.</p>&mdash; Raphael Haddad (@RaphHaddadAus) <a href="https://twitter.com/RaphHaddadAus/status/1222777079093022721?ref_src=twsrc%5Etfw">January 30, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## A Time in Progress (TIP) Limit
 
 A TIP limit is a constraint that is placed on the system in order to limit the
