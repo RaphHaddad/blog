@@ -1,6 +1,6 @@
 ---
 title: 'Time in Progress (TIP) Limits'
-date: 2019-02-01T12:00:00.001+10:00
+date: 2020-02-01T12:00:00.001+10:00
 draft: false
 tags : [kanban, agile]
 ---
