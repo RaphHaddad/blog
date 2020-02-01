@@ -45,7 +45,7 @@ than the limit itself. The former can be controlled easier than the
 latter because a
 WIP limit can only be violated if a team consciously pulls in work, whereas  
 a TIP limit violation occurs due to several other factors, external or
-otherwise.
+otherwise, and often unconscious.
 
 A few questions arise when a TIP limit is violated: Why has the TIP limit been
 violated in the first place and what should a team do if a TIP limit is
