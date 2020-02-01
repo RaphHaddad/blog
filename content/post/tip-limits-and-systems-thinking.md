@@ -21,7 +21,7 @@ item has been in that part of the flow. Controlling WIP is something that many
 people can agree is a good thing. TIP is something that is often unheard of,
 or ignored all together.
 
-## How to Practically use TIP
+## How to use TIP
 
 Initial TIP and WIP limits are difficult to enforce because there is no
 baseline metric to begin with. After setting initial limits, the team can
