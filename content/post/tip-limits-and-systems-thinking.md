@@ -1,5 +1,5 @@
 ---
-title: 'Time in Progress (TIP) and Systems Thinking'
+title: 'Time in Progress (TIP) Limits'
 date: 2019-02-01T12:00:00.001+10:00
 draft: true
 tags : [kanban, agile]
@@ -40,10 +40,15 @@ decrease your TIP limits.
 ## Dealing with Violations
 
 A WIP violation occurs when the team pulls in work from an upstream stage in
-the process. A TIP violation occurs when an item has remained longer than the
-limit itself. The former can be controlled easier than the latter. A few
-questions arise when a TIP limit is violated: Why has the TIP limit been
-violated in the first place and What should a team do if a TIP limit is
+the process. A TIP limit violation occurs when an item has remained longer
+than the limit itself. The former can be controlled easier than the
+latter because a
+WIP limit can only be violated if a team consciously pulls in work, whereas  
+a TIP limit violation occurs due to several other factors, external or
+otherwise.
+
+A few questions arise when a TIP limit is violated: Why has the TIP limit been
+violated in the first place and what should a team do if a TIP limit is
 violated?
 
 The answer to the first question can be a variety of things, technical or
