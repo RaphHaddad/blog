@@ -33,7 +33,7 @@ TIP limits can be set according the length of an iteration. For example:
 suppose your iteration length is 10 days, placing an initial TIP limit of 13
 days would initially seem to be a liberal limit. Over time, and through
 inspection, if your system (that is your flow) is able to take the stress,
-decrease your TIP limits as you go.
+decrease your TIP limits.
 
 ## Dealing with Violations
 
