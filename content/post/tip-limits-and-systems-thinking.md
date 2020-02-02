@@ -75,7 +75,7 @@ Splitting a user story into at least three other user stories is a more
 difficult task than simply splitting a user story into two. Splitting a user
 story into two, means that the residue work goes back into the backlog, and
 the completed work is marked as closed. Whereas when a user story is split
-into at least three items, more though needs to go into what work has been
+into at least three items, more thought needs to go into what work has been
 completed and what work is remaining. This limits the common error of simply
 putting the residue work back into the backlog without properly examining what
 the nature of that work actually is. Splitting into at least three items also
