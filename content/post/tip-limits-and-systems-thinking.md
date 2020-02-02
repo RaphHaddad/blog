@@ -86,5 +86,5 @@ uncovered during the act of working on the user story that has just been closed.
 Finally, I'd encourage you to try TIP limits with user story splitting in your
 delivery process. It will put stress on your delivery process for an iteration
 or two, however, it may also help you by increasing your throughput and by
-capturing previously uncovered work. If TIP limits to end up working for you,
+capturing previously uncovered work. If TIP limits do end up working for you,
 I'd like to hear your stories and learnings. Please feel free to contact me.
