@@ -2,7 +2,7 @@
 title: 'Build and Release Pipeline for Your Own Custom VSTS Tasks'
 date: 2018-03-27T16:14:00.002+11:00
 draft: false
-tags : [vsts, devops]
+tags : [vsts, devops, azure devops]
 ---
 
 Anyone can create their own custom VSTS tasks and put them on the VSTS [marketplace](https://marketplace.visualstudio.com/). There are tons of these custom tasks and they can be published publicly into the marketplace or privately into your own instance of VSTS. This blog post will demonstrate how to setup a build and release pipeline for these custom tasks (using custom VSTS tasks!).
