@@ -159,4 +159,4 @@ In many cases, development teams do not need to split up all their
 system components into multiple code-bases. Monorepositories provide development
 teams with the flexibility to setup multiple code-bases in addition to the
 configuration options to setup a robust code delivery
-process all the way into production.
+process, all the way into production.
