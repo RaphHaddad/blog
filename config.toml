@@ -3,6 +3,9 @@ languageCode = "en-us"
 title = "Raph's Blog"
 theme = "kiera"
 
+[markup.goldmark.renderer]
+unsafe= true
+
 [permalinks]
   post = "/:year/:month/:title/"
 

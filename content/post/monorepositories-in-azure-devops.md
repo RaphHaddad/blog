@@ -1,6 +1,6 @@
 ---
 title: 'Monorepositories in Azure DevOps'
-date: 2020-02-10T00:00:00.000+10:00
+date: 2020-02-12T00:00:00.000+10:00
 draft: true
 tags : [devops, azure devops]
 ---
@@ -18,7 +18,7 @@ limited to):
 - Local development setup doesn't assume the path of components, thus limiting
   the risk of divergent local development environments across the development
   team.
-- Consistent patterns across code bases can be enforced easier. Such as
+- Consistent patterns across code-bases can be enforced easier. Such as
   naming conventions, where to put Docker files, and infrastructure as code.
 
 In this post, I'll demonstrate how to setup monorepositories within Azure
@@ -30,27 +30,27 @@ https://github.com/RaphHaddad/monorepos-example
 ## What is a monorepository?
 
 A monorepository is a single git/hg/svn repository that is a collection of code
-bases. In a typical setup, the collection of code bases are separated on the
+bases. In a typical setup, the collection of code-bases are separated on the
 path level where the first part of the path corresponds to a separate code
-base. Basically, each code base has its own folder in the repository.
+base. Basically, each code-base has its own folder in the repository.
 
 I've got an example README.md file for monorepositories
 here: https://gist.github.com/RaphHaddad/649d58e7fc18cb26cb10b2d6e49f0cdc
 
-## Targeting different continuous integration builds for individual code bases
+## Targeting different continuous integration builds for individual code-bases
 
 A monorepository will have several builds associated with it due to the nature
-of the monorepository having multiple code bases. The desired affect is to
-trigger a Continuous Integration (CI) build for a particular code base in the
+of the monorepository having multiple code-bases. The desired affect is to
+trigger a Continuous Integration (CI) build for a particular code-base in the
 monorepository only if its corresponding code has changed.
+
+<img src="/images/mono-repo.png" alt="monorepositories with multiple builds" style="width: auto;"/>
 
 For example: suppose a monorepository has two folders _front-end_ and
 _back-end_ and I have two builds _CI front-end_ and _CI back-end_. If I commit
 code to _front-end_ then only the build _CI front-end_ should be triggered and
 not _CI back-end_. This can be achieved in Azure DevOps by having two different
 `azure-build.yml` files for each build with an explicit inclusion path.
-
-![monorepositories with multiple builds](/images/mono-repo.png)
 
 ### Creating the builds
 
@@ -142,7 +142,7 @@ run prior to the merge into `master`.
 
 ## Checking history
 
-Developers often need to check the change log of a particular code base.
+Developers often need to check the change log of a particular code-base.
 In a monorepository setup, this can be achieved by using the `git log`
 command followed by the code-base that is being examined.
 
