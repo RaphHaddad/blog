@@ -1,7 +1,7 @@
 ---
 title: 'Monorepositories in Azure DevOps'
 date: 2020-02-12T00:00:00.000+10:00
-draft: true
+draft: false
 tags : [devops, azure devops]
 ---
 
