@@ -2,7 +2,7 @@
 title: 'Post Deployment Tests on Azure DevOps using Pester'
 date: 2018-12-08T00:00:00.001+10:00
 draft: false
-tags : [devops, powershell, git]
+tags : [devops, powershell, git, azure devops]
 ---
 
 Post deployment tests provide additional confidence that unit tests or self-contained integration tests will not, as the tests themselves are interrogating a live instance of your application as a black box, rather than mocking aspects of your application like unit tests as a white box. In this post, I will run through how I do this with [release pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/release/what-is-release-management?view=vsts) on Azure DevOps using [Pester](https://github.com/pester/Pester) as a testing framework.
