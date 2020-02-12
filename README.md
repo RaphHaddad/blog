@@ -4,7 +4,15 @@ Raph's blog
 
 ## Local Development Setup
 
-### 1. Install Hugo with npm
+### 1. Clone the repository with the theme submodule
+
+```cmd
+git clone https://github.com/RaphHaddad/blog
+git submodule init
+git submodule update
+```
+
+### 2. Install Hugo
 
 #### macOS
 
@@ -14,4 +22,6 @@ Raph's blog
 
 `choco install hugo -confirm`
 
-### 2. 
+### 3. Run the blog
+
+`hugo server -D`
