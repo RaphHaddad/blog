@@ -23,14 +23,9 @@ Explain to your developers, why you actually have these things in place. For exa
 
 **Continuous Integration**: To ensure that you haven't broken the build or tests. As a broken build or test hinders other developer's work. In addition, the longer a tests fail, the harder they are to fix, meaning a higher chance of bugs appearing in your product or even the software product not doing what it's supposed to do.
 
-  
-
 **Continuous Delivery:** To ensure that the build is always able to be deployed. So we don't have to waste time at the end of the sprint patching together the build.
 
-
 **Continuous Deployment:** To provide a mechanism to request quick feedback to testers and stakeholders.
-
-  
 
 ## Speak to individual members
 The above problems often revolve either around a maturing culture. Or even worse, a bad culture. It often only takes one or two people to build a good culture, at the same time, it can take one or two people to destroy a culture. 
