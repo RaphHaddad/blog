@@ -58,10 +58,10 @@ To achieve this behaviour you'll need to create a build definition for every
 code-base that you need a build for.
 In our simple [example](https://github.com/RaphHaddad/monorepos-example),
 there are two code-bases. A front-end and a back-end code-base,
-below is the example of the front-end.
+below is the example of the back-end.
 Pay close attention to the `trigger` part of the YAML build definition,
 this is telling Azure DevOps to only run a build if any changed files
-match the following path `/front-end/*` (where `*` is
+match the following path `/back-end/*` (where `*` is
 a wildcard character).
 
 ```yaml
