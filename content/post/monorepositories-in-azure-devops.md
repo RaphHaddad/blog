@@ -49,7 +49,7 @@ monorepository only if its corresponding code has changed.
 
 For example: suppose a monorepository has two folders _front-end_ and
 _back-end_ and I have two builds _CI front-end_ and _CI back-end_.
-If I commited code to the _front-end_ code-base then only the build
+If I committed code to the _front-end_ code-base then only the build
 _CI front-end_ should be triggered and not _CI back-end_.
 This is achieved in Azure DevOps by having two different `azure-build.yml`
 files one for each build with an explicit inclusion path.
@@ -57,7 +57,7 @@ files one for each build with an explicit inclusion path.
 ### Creating the builds
 
 To achieve this behaviour you'll need to create a build definition for every
-code-base that you need a build for.
+code-base for which you need a build.
 In our simple [example](https://github.com/RaphHaddad/monorepos-example),
 there are two code-bases. A front-end and a back-end code-base,
 below is the example of the back-end.
