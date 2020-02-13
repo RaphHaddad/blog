@@ -51,7 +51,7 @@ For example: suppose a monorepository has two folders _front-end_ and
 _back-end_ and I have two builds _CI front-end_ and _CI back-end_.
 If I committed code to the _front-end_ code-base then only the build
 _CI front-end_ should be triggered and not _CI back-end_.
-This is achieved in Azure DevOps by having two different `azure-build.yml`
+This is achieved in Azure DevOps by having two different `azure-pipelines.yml`
 files one for each build with an explicit inclusion path.
 
 ### Creating the builds
