@@ -19,7 +19,7 @@ For example, the below table has the following features:
 
 Although the table above satisfies all the requirements, it's still an
 unusable product. Another example is a disjointed document where paragraphs
-aren't orthographically consistent; such as the usage of different tense, or
+aren't orthographically consistent; such as the usage of different tense or
 points of view (among other things).
 
 There are several reason why the disjointed features syndrome may occur,
