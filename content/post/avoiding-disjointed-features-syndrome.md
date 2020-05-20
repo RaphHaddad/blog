@@ -22,9 +22,9 @@ unusable product. Another example is a disjointed document where paragraphs
 aren't orthographically consistent; such as the usage of different tense or
 points of view (among other things).
 
-There are several reason why the disjointed features syndrome may occur,
-below is an outline of a few delivery behaviours to avoid to help
-avoid this syndrome.
+There are several reason why the "disjointed features syndrome" may occur,
+below is an outline of a few delivery behaviours to avoid in order to
+reduce the likelihood that this syndrome will occur.
 
 ## Feature-Only Review Ceremonies
 
