@@ -39,7 +39,9 @@ that enable this visibility of value in a focussed fashion.
 
 To avoid this behaviour, beware of only reviewing the previous iteration's
 changes during the review. Whilst recent changes should be the emphasis, a
-review on the entire product, or at least, [a vertical slice](https://en.wikipedia.org/wiki/Vertical_slice) of the product each and every review will hedge against the "disjointed features syndrome".
+review on the entire product, or at least,
+[a vertical slice](https://en.wikipedia.org/wiki/Vertical_slice) of the product
+each and every review will hedge against the "disjointed features syndrome".
 
 ## Procrastinating Deployment To End Users
 
