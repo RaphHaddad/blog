@@ -43,6 +43,13 @@ review on the entire product, or at least,
 [a vertical slice](https://en.wikipedia.org/wiki/Vertical_slice) of the product
 each and every review will hedge against the "disjointed features syndrome".
 
+In addition to an assessment of the immediate iteration, an honest and
+blameless assessment against a product vision should occur during reviews.
+This product vision should be an easily adaptable artefact that can change
+based on delivery team velocity and/or market changes. Product visions arefacts
+are often expressed in terms of road maps, goals,
+or [impact maps](https://www.impactmapping.org) (my favourite).
+
 ## Procrastinating Deployment To End Users
 
 Being agile isn't about perfectionism, it is about testing what needs to be
@@ -54,7 +61,7 @@ team may not be able to.
 
 The immediate delivery team of a product is constantly exposed to the product,
 they understand it intimately, and are accustomed to its flaws and features.
-Often, it is a new and different perspective that highlight obvious flaws in
+Often, it is a new and different perspective that highlights obvious flaws in
 a product. This is where useability and experience testing with early adopters
 pays off.
 
@@ -69,6 +76,8 @@ syndrome" is amplified rather than reduced.
 
 Localised thinking is the antithesis of systems thinking, and systems thinking
 is an important aspect in hedging against the "disjointed features syndrome".
+
+## Conclusion
 
 In conclusion, avoiding the above behaviours will help in reducing the chance
 that the "disjointed features syndrome" will occur in your product, however,
