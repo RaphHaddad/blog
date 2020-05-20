@@ -62,7 +62,7 @@ When the "disjointed features" syndrome occurs, user stories will often get
 blamed for not having enough detail. Solutions that are often recommended
 during post-mortems or retrospectives is to make user stories more detailed.
 Unfortunately, this creates a situation of localised thinking within a user
-story, and more often than not, create situations where the "disjoined feature
+story, and more often than not, creates situations where the "disjointed feature
 syndrome" is amplified rather than reduced.
 
 Localised thinking is the antithesis of systems thinking, and systems thinking
