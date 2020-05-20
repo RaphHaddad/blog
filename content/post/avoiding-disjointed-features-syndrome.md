@@ -46,7 +46,7 @@ each and every review will hedge against the "disjointed features syndrome".
 In addition to an assessment of the immediate iteration, an honest and
 blameless assessment against a product vision should occur during reviews.
 This product vision should be an easily adaptable artefact that can change
-based on delivery team velocity and/or market changes. Product visions arefacts
+based on delivery team velocity and/or market changes. Product vision arefacts
 are often expressed in terms of road maps, goals,
 or [impact maps](https://www.impactmapping.org) (my favourite).
 
