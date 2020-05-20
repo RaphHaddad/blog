@@ -58,7 +58,7 @@ pays off.
 
 ## Pursuing the "Extensive Detail" Dichotomy
 
-When the "disjointed features" syndrome occurs, user stories will often get
+When the "disjointed features syndrome" occurs, user stories will often get
 blamed for not having enough detail. Solutions that are often recommended
 during post-mortems or retrospectives is to make user stories more detailed.
 Unfortunately, this creates a situation of localised thinking within a user
