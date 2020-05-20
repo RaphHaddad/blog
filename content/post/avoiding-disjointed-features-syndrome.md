@@ -66,7 +66,7 @@ story, and more often than not, creates situations where the "disjointed feature
 syndrome" is amplified rather than reduced.
 
 Localised thinking is the antithesis of systems thinking, and systems thinking
-is an important aspect in hedging against the "Disjointed Features Syndrome".
+is an important aspect in hedging against the "disjointed features syndrome".
 
 In conclusion, avoiding the above behaviours will help in reducing the chance
 that the "disjointed features syndrome" will occur in your product, however,
