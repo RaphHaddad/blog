@@ -22,8 +22,8 @@ unusable product. Another example is a disjointed document where paragraphs
 aren't orthographically consistent; such as the usage of different tense or
 points of view (among other things).
 
-Below is an outline of a few delivery behaviours to avoid in order to reduce
-the occurance of the "disjointed features syndrome"
+Below is an outline of a few delivery behaviours to avoid, in order to reduce
+the occurrence of the "disjointed features syndrome"
 
 ## Feature-Only Review Ceremonies
 
