@@ -14,7 +14,7 @@ at hand, could cause negative consequences.
 I believe the first step in being able to give good feedback is
 knowing how to receive feedback from others. It is a behaviour that
 overlaps with giving feedback, and overtime, I've learnt to be patient
-and welcoming to the person giving me feedback, and have given this advise to
+and welcoming to the person giving me feedback, and have given this advice to
 others with a degree of success.
 
 I have also developed a framework (in the form of an acronym) that might help
@@ -28,7 +28,7 @@ ways:
 
 - It encourages the giver of the feedback to freely convey their thoughts;
 - It allows the receiver of the feedback to dig in further in the feedback
-received, so that details may be uncovered that maybe valuable for improvement;
+received, so that details may be uncovered that may be valuable for improvement;
 and
 - It allows a structured approach to identifying relevance of feedback
 so that the receiver can improve.
