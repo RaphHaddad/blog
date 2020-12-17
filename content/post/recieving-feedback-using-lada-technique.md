@@ -120,7 +120,7 @@ case, go back to step one. As a matter of principle, for individuals who are
 not accustomed to receiving feedback, I would suggest to refrain from executing
 the decide step during the receiving of feedback.
 
-When deciding after introspection and refection, it is important to
+When deciding after introspection and reflection, it is important to
 examine one's feelings in such a way that helps the receiver make a
 decision on which feedback items to address.
 
@@ -128,7 +128,7 @@ decision on which feedback items to address.
 
 The final step of the LADA framework is "act". This step is about creating
 actionable items derived from feedback items in the previous "decide" step.
-Of all the previous steps in the framework, this is the one that is done after
+Of all the steps in the framework, this is the one that is done after
 the interaction between the giver of the feedback and the receiver. Many
 items should be actionable with outcomes that are measurable. I'd encourage
 setting up these goals or outcomes using common formats like SMART goals or
@@ -141,7 +141,7 @@ provide you with feedback periodically is important for improvement.
 The LADA framework is something that has worked for me in the past, if
 it is something that you feel may work for you, use it liberally and widely.
 If it is something that you wish to modify, please do so accordingly as well.
-If you're new to receiving feedback, you may find that following this
+If you're new to receiving feedback, you may find following this
 framework in its entirety to be very beneficial. If you're accustomed to
 receiving feedback, you may find that you've already been doing a lot of the
 techniques highlighted above. If that's the case, I'd encourage you to
