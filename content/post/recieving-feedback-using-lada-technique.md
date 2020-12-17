@@ -22,6 +22,8 @@ you receive feedback better yourself. It is called "LADA" pronounced "ladder"
 in Australian English (excuse my exclusion of other variants of English,
 I am not creative enough to derive an acronym that encompasses all accents).
 
+!["LADA"](../../static/images/lada.png)
+
 LADA stands for: listen, absorb, decide, and act. Receiving feedback
 (be it verbal or written) whilst running this process, will help in several
 ways:
