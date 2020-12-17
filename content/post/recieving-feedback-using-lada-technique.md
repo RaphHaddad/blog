@@ -1,5 +1,5 @@
 ---
-title: 'Receiving Feedback using the LADA Technique'
+title: 'LADA - A Framework for Receiving Feedback'
 date: 2020-12-17T00:00:00.000+10:00
 draft: false
 tags : [agile]
