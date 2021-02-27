@@ -1,8 +1,8 @@
 ---
 title: 'DevSecOps on Azure using Terraform and Python'
-date: 2018-02-01T15:54:00.001+11:00
+date: 2021-02-28T00:00:00.001+11:00
 draft: false
-tags : [git]
+tags : [azure devops, azure cloud, devops]
 ---
 
 This post will demonstrate how to create a segregated Azure Cloud environment (a
@@ -93,7 +93,7 @@ Two folders will be created in the working directory:
 This pattern can be achieved for any Terraform remote backend and will allow the
 executor to use the same Terraform templates to create multiple instances of the
 resources declared in the Terraform template.
-*Note* It is important to treat Terraform state files as sensitive data
+*Note* it is important to treat Terraform state files as sensitive data
 (passwords, tokens). See this [Terraform page](https://www.terraform.io/docs/language/state/sensitive-data.html?_ga=2.252783049.1925722553.1613943599-1447805869.1611735730#recommendations) for more information.
 
 ## Creating the Service Principle
@@ -126,7 +126,7 @@ resource "random_password" "service-principle-password" {
 
 ## Creating the Resource Group
 
-The new resource group needs to be declared with a `azurerm_role_assignment`
+The new resource group needs to be declared with the Terraform resource type `azurerm_role_assignment`
 with `Contributor` access given to the previously declared [service principle](#creating-the-service-principle). The
 snippet of the code is show below and the full code is available [on GitHub](TODO)
 
@@ -172,7 +172,8 @@ resource "azuredevops_serviceendpoint_azurerm" "serviceendpoint-azure" {
 
 The above setup creates a resource group and a service principle with
 `Contributor` access to that resource group. It also creates a service
-connection from Azure DevOps that uses the provisioned service principle which can be used in
+connection from Azure DevOps that uses the provisioned service principle that
+can then be used in
 release pipelines.
 
 If the script is run as follows:
@@ -185,7 +186,7 @@ If the script is run as follows:
 Apply complete! Resources: 7 added, 0 changed, 0 destroyed.
 ```
 
-The result would be a resource group `an-example-resource-group` is provsioned on Azure Cloud with
+The result would be a resource group `an-example-resource-group` provisioned on Azure Cloud with
 the service principle `an-example-resource-group-spn` having `Contributor`
 access to that resource group.
 
@@ -195,3 +196,5 @@ As well as, a service connection from Azure DevOps into Azure Cloud that can be
 used by release pipelines.
 
 ![Resource Groups Provisioned with Terraform](/images/service-connection-terraform.png)
+
+Finally, thank you for reading this post. I hope you got out of it something.
