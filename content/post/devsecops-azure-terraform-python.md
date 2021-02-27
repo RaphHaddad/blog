@@ -14,7 +14,7 @@ Teams can then setup their own release pipelines using the provisioned resource
 group and service connection. The service connection created will only have
 permission to a single resource group within Azure.
 
-The reference code for this post is available on this [GitHub repository](TODO).
+The reference code for this post is available on this [GitHub repository](https://github.com/RaphHaddad/devsecops-azure-terraform-python).
 
 Specifically, this post will demonstrate:
 
@@ -59,7 +59,7 @@ Terraform relies on a state file to perform resource deployments, for the
 purposes of this post, local system state will be used. For production
 work-loads [remote state](https://www.terraform.io/docs/language/state/index.html) should be used.
 
-The Python script [setup-environment.py](TODO), initialises Terraform state *dynamically* by assigning a
+The Python script [setup-environment.py](https://github.com/RaphHaddad/devsecops-azure-terraform-python/blob/107fe97dbd6674d1200436922b0b7d87328a480b/setup-environment.py#L13-L22), initialises Terraform state *dynamically* by assigning a
 different state file according to the name of the resource group desired to be
 provisioned. This means that the same script can be used for multiple resource
 groups by changing the argument `--resource-group-name`.
@@ -103,7 +103,7 @@ DevOps and Azure Cloud. This service principle is provisioned with a randomly
 generated password by Terraform, which will be used by the service connection.
 
 The resource used to generate this is `random_password`. A snippet of the code is
-shown below and the full code is available [on GitHub](TODO).
+shown below and the full code is available [on GitHub](https://github.com/RaphHaddad/devsecops-azure-terraform-python/blob/107fe97dbd6674d1200436922b0b7d87328a480b/azure-cloud.tf#L12-L31).
 
 ```hcl
 resource "azuread_service_principal" "service-principle" {
@@ -128,7 +128,7 @@ resource "random_password" "service-principle-password" {
 
 The new resource group needs to be declared with the Terraform resource type `azurerm_role_assignment`
 with `Contributor` access given to the previously declared [service principle](#creating-the-service-principle). The
-snippet of the code is show below and the full code is available [on GitHub](TODO)
+snippet of the code is show below and the full code is available [on GitHub](https://github.com/RaphHaddad/devsecops-azure-terraform-python/blob/107fe97dbd6674d1200436922b0b7d87328a480b/azure-cloud.tf#L1-L10)
 
 ```hcl
 resource "azurerm_resource_group" "resource-group" {
@@ -151,7 +151,7 @@ principle has been provisioned with a password. To create this service
 connection the resource `azuredevops_serviceendpoint_azurerm` is used. Access to
 the password is available as a resource attribute, so this can be used to
 provision the service connection on Azure DevOps. The
-snippet of the code is show below and the full code is available [on GitHub](TODO)
+snippet of the code is show below and the full code is available [on GitHub](https://github.com/RaphHaddad/devsecops-azure-terraform-python/blob/main/azure-devops.tf)
 
 ```hcl
 resource "azuredevops_serviceendpoint_azurerm" "serviceendpoint-azure" {
