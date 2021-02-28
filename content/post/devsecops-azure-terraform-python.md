@@ -197,7 +197,7 @@ access to that resource group.
 
 ![Resource Groups Provisioned with Terraform](/images/resource-group-terraform.png)
 
-As well as, a service connection from Azure DevOps into Azure Cloud that can be
+As well as a service connection from Azure DevOps into Azure Cloud that can be
 used by release pipelines.
 
 ![Resource Groups Provisioned with Terraform](/images/service-connection-terraform.png)
