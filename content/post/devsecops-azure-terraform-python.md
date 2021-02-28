@@ -44,7 +44,7 @@ CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli) is needed.
 The default web browser has been opened at https://login.microsoftonline.com/common/oauth2/authorize. Please continue the login in the web browser. If no web browser is available or if the web browser fails to open, use device code flow with `az login --use-device-code`.
 ```
 
-To authenticate into Azure DevOps. A [Personal Access Token (PAT)](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=preview-page) is needed with
+To authenticate into Azure DevOps, A [Personal Access Token (PAT)](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=preview-page) is needed with
 the scope *Read, query, & manage* on *Service Connections*. After generating the
 PAT, Terraform requires certain environment variables to be set:
 
