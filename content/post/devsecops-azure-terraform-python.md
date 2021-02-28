@@ -128,7 +128,7 @@ resource "random_password" "service-principle-password" {
 
 The new resource group needs to be declared with the Terraform resource type `azurerm_role_assignment`
 with `Contributor` access given to the previously declared [service principle](#creating-the-service-principle). The
-snippet of the code is show below and the full code is available [on GitHub](https://github.com/RaphHaddad/devsecops-azure-terraform-python/blob/107fe97dbd6674d1200436922b0b7d87328a480b/azure-cloud.tf#L1-L10)
+snippet of the code is shown below and the full code is available [on GitHub](https://github.com/RaphHaddad/devsecops-azure-terraform-python/blob/107fe97dbd6674d1200436922b0b7d87328a480b/azure-cloud.tf#L1-L10)
 
 ```hcl
 resource "azurerm_resource_group" "resource-group" {
