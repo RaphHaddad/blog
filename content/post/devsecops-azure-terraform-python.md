@@ -202,4 +202,4 @@ used by release pipelines.
 
 ![Resource Groups Provisioned with Terraform](/images/service-connection-terraform.png)
 
-Finally, thank you for reading this post. I hope you got out of it something.
+Finally, thank you for reading this post. I hope it has been beneficial for you.
