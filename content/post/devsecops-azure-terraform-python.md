@@ -176,7 +176,10 @@ The above setup creates a resource group and a service principal with
 `Contributor` access to that resource group. It also creates a service
 connection from Azure DevOps that uses the provisioned service principal that
 can then be used in
-release pipelines.
+[Azure Release pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/release/?view=azure-devops). This means that this service connection can be used by Azure
+DevOps pipelines to automate the deployments of resources and compiled code into
+the provisioned resource group ensuring an automated, isolated, and secure release
+process into Azure Cloud.
 
 If the script is run as follows:
 
