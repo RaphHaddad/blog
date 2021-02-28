@@ -57,8 +57,7 @@ PAT, Terraform requires certain environment variables to be set:
 
 ## Initialising Terraform
 
-Terraform relies on a state file to perform resource deployments, for the
-purposes of this post, local system state will be used. For production
+Terraform relies on a state file to perform resource deployments. For the purposes of this post and to keep things simple, local system state will be used. For production
 work-loads [remote state](https://www.terraform.io/docs/language/state/index.html) should be used.
 
 The Python script [setup-environment.py](https://github.com/RaphHaddad/devsecops-azure-terraform-python/blob/107fe97dbd6674d1200436922b0b7d87328a480b/setup-environment.py#L13-L22), initialises Terraform state *dynamically* by assigning a
