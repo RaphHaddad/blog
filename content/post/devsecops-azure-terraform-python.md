@@ -14,8 +14,6 @@ Teams can then setup their own release pipelines using the provisioned resource
 group and service connection. The service connection created will only have
 permission to a single resource group within Azure.
 
-The reference code for this post is available on this [GitHub repository](https://github.com/RaphHaddad/devsecops-azure-terraform-python).
-
 Specifically, this post will demonstrate:
 
 - How to provision a resource group for an application or service; and
@@ -24,7 +22,8 @@ with [contributor](https://docs.microsoft.com/en-us/azure/role-based-access-cont
   resource group.
 
 The above will be done with [Terraform](https://www.terraform.io) wrapped in
-a [Python](https://www.python.org) script.
+a [Python](https://www.python.org) script. The reference code for this post
+is available on this [GitHub repository](https://github.com/RaphHaddad/devsecops-azure-terraform-python).
 
 ## Pre-prerequisites and Setup
 
@@ -96,28 +95,28 @@ resources declared in the Terraform template.
 *Note* it is important to treat Terraform state files as sensitive data
 (passwords, tokens). See this [Terraform page](https://www.terraform.io/docs/language/state/sensitive-data.html?_ga=2.252783049.1925722553.1613943599-1447805869.1611735730#recommendations) for more information.
 
-## Creating the Service Principle
+## Creating the Service principal
 
-A service principle is needed to create the service connection between Azure
-DevOps and Azure Cloud. This service principle is provisioned with a randomly
+A service principal is needed to create the service connection between Azure
+DevOps and Azure Cloud. This service principal is provisioned with a randomly
 generated password by Terraform, which will be used by the service connection.
 
 The resource used to generate this is `random_password`. A snippet of the code is
 shown below and the full code is available [on GitHub](https://github.com/RaphHaddad/devsecops-azure-terraform-python/blob/107fe97dbd6674d1200436922b0b7d87328a480b/azure-cloud.tf#L12-L31).
 
 ```hcl
-resource "azuread_service_principal" "service-principle" {
+resource "azuread_service_principal" "service-principal" {
   application_id               = azuread_application.ad-application.application_id
 }
 
-resource "azuread_service_principal_password" "service-principle-password" {
-  service_principal_id = azuread_service_principal.service-principle.id
+resource "azuread_service_principal_password" "service-principal-password" {
+  service_principal_id = azuread_service_principal.service-principal.id
   description          = "Managed by Terraform"
-  value                = random_password.service-principle-password.result
+  value                = random_password.service-principal-password.result
   end_date             = "2099-01-01T01:02:03Z"
 }
 
-resource "random_password" "service-principle-password" {
+resource "random_password" "service-principal-password" {
   length           = 16
   special          = true
   override_special = "_%@"
@@ -127,7 +126,7 @@ resource "random_password" "service-principle-password" {
 ## Creating the Resource Group
 
 The new resource group needs to be declared with the Terraform resource type `azurerm_role_assignment`
-with `Contributor` access given to the previously declared [service principle](#creating-the-service-principle). The
+with `Contributor` access given to the previously declared [service principal](#creating-the-service-principal). The
 snippet of the code is shown below and the full code is available [on GitHub](https://github.com/RaphHaddad/devsecops-azure-terraform-python/blob/107fe97dbd6674d1200436922b0b7d87328a480b/azure-cloud.tf#L1-L10)
 
 ```hcl
@@ -136,10 +135,10 @@ resource "azurerm_resource_group" "resource-group" {
   location = "Australia East"
 }
 
-resource "azurerm_role_assignment" "resource-group-service-principle-role-assignment" {
+resource "azurerm_role_assignment" "resource-group-service-principal-role-assignment" {
   scope                = azurerm_resource_group.resource-group.id
   role_definition_name = "Contributor"
-  principal_id         = azuread_service_principal.service-principle.id
+  principal_id         = azuread_service_principal.service-principal.id
 }
 ```
 
@@ -147,7 +146,7 @@ resource "azurerm_role_assignment" "resource-group-service-principle-role-assign
 
 The final resource to provision is the service connection from Azure DevOps to
 Azure Cloud. At this stage, a resource group has been provisioned and a service
-principle has been provisioned with a password. To create this service
+principal has been provisioned with a password. To create this service
 connection the resource `azuredevops_serviceendpoint_azurerm` is used. Access to
 the password is available as a resource attribute, so this can be used to
 provision the service connection on Azure DevOps. The
@@ -159,8 +158,8 @@ resource "azuredevops_serviceendpoint_azurerm" "serviceendpoint-azure" {
   service_endpoint_name = "${var.resource-group-name}-azure-service-connection"
   description = "Managed by Terraform" 
   credentials {
-    serviceprincipalid  = azuread_service_principal.service-principle.id
-    serviceprincipalkey = random_password.service-principle-password.result
+    serviceprincipalid  = azuread_service_principal.service-principal.id
+    serviceprincipalkey = random_password.service-principal-password.result
   }
   azurerm_spn_tenantid      = data.azurerm_subscription.current.tenant_id
   azurerm_subscription_id   = data.azurerm_subscription.current.subscription_id
@@ -170,9 +169,9 @@ resource "azuredevops_serviceendpoint_azurerm" "serviceendpoint-azure" {
 
 ## Conclusion
 
-The above setup creates a resource group and a service principle with
+The above setup creates a resource group and a service principal with
 `Contributor` access to that resource group. It also creates a service
-connection from Azure DevOps that uses the provisioned service principle that
+connection from Azure DevOps that uses the provisioned service principal that
 can then be used in
 release pipelines.
 
@@ -187,7 +186,7 @@ Apply complete! Resources: 7 added, 0 changed, 0 destroyed.
 ```
 
 The result would be a resource group `an-example-resource-group` provisioned on Azure Cloud with
-the service principle `an-example-resource-group-spn` having `Contributor`
+the service principal `an-example-resource-group-spn` having `Contributor`
 access to that resource group.
 
 ![Resource Groups Provisioned with Terraform](/images/resource-group-terraform.png)
