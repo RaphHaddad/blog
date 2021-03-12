@@ -3,6 +3,10 @@ languageCode = "en-us"
 title = "Raph's Blog"
 theme = "kiera"
 
+[params]
+  author = "Raphael Haddad"
+  description = "Raph's blog"
+
 [markup.goldmark.renderer]
 unsafe= true
 
