@@ -42,19 +42,18 @@ The Azure CLI provides a simple way of interacting with Azure via any command li
 
 The Azure CLI can definitely be run on Windows, however, due to the different shells available on Windows (PowerShell, Command Prompt) a script may experience negative unintended consequences. Specifically, Windows shells such as PowerShell and Command Prompt deal with quotes (and escaping them) differently. [See this documentation from Microsoft](https://docs.microsoft.com/en-us/cli/azure/use-cli-effectively#quoting-issues) that goes into this issue in more detail.
 
-Python’s design makes it easy to split code in modules, files, and classes. This helps keep related code close to each other and aides in dependancy management of modules. Using the Azure CLI within Python is simple by either creating a wrapper using the Python libraries argparse and json, or using the [existing pip library by Microsoft](https://github.com/Azure/azure-cli). In addition, the Azure CLI itself is written Python, so if a bug is found, context switching into the Azure CLI code won’t be a strenuous affair.  
+Python’s design makes it easy to split code in modules, files, and classes. This helps keep related code close to each other and aides in dependancy management of modules. Using the Azure CLI within Python is simple by either creating a wrapper using the Python libraries argparse and json, or using the [existing pip library by Microsoft](https://github.com/Azure/azure-cli). In addition, the Azure CLI itself is written in Python, so if a bug is found, context switching into the Azure CLI code won’t be a strenuous affair.  
 
 ## Integration with Infrastructure Template Technologies
 
-Due to the ease of modularisation explained above Python also makes it easy to integrate with infrastructure template technologies such as Terraform, Bicep, or ARM Templates.  Python’s libraries that integrate with the host operating system’s shell means that CLI tools from a variety of providers can be used by building out the necessary wrappers and modules over them. 
+Due to the ease of modularisation explained above, Python also makes it easy to integrate with infrastructure template technologies such as Terraform, Bicep, or ARM Templates.  Python’s libraries that integrate with the host operating system’s shell means that CLI tools from a variety of providers can be used by building out the necessary wrappers and modules over them. 
 
 ## Readability and Conciseness
 
-Many scripting languages run on Linux: Perl, Ruby, and Bash (amongst many). As a consequence, choosing Python over other languages may seem inconsequential, however, Python is a lot more readable and easier to learn than many other languages. Many introduction to coding courses are now using Python to teach coding (both in schools and in higher education institutes). A testament to the simplicity of the language. 
+Many scripting languages run on Linux: Perl, Ruby, and Bash (amongst many). As a consequence, choosing Python over other languages may seem inconsequential, however in my opinion, Python is a lot more readable and easier to learn than many other languages. Many introduction to coding courses are now using Python to teach coding (both in schools and in higher education institutes). A testament to the simplicity of the language. 
 
 ## Conclusion
 
 Python is a great language to accelerate the creation of Azure automation scripts due to its maturity and uptake within the wider automation ecosystem (and specifically the Microsoft ecosystem). It is concise, supported,  interoperable, and runs on a variety of build agents. It saying this, a technological choice should always take into consideration several factors that encompass the organisation to which it will be introduced.
 
 Once again, thank you for reading this post. I hope you got something out of it. 
-
