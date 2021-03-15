@@ -1,6 +1,6 @@
 ---
 title: 'Python to Automate Azure Deployments'
-date: 2021-03-12T00:00:00.001+11:00
+date: 2021-03-16T00:00:00.001+11:00
 draft: false
 tags : [DevOps, Azure, Azure DevOps, Cloud]
 ---
