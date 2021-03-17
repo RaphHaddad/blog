@@ -38,7 +38,7 @@ Here is the Terraform code for declaring a storage account on Azure:
 resource "azurerm_storage_account" "a-storage-account" {
   name                     = "anexamplestorageaccount
   resource_group_name      = azurerm_resource_group.resource-group.name
-  location                 = azurerm_resource_group.esource-group.location
+  location                 = azurerm_resource_group.resource-group.location
 }
 ```
 
@@ -157,7 +157,7 @@ that issues can be captured further left in the deployment lifecycle.
 Bicep is only supported by Azure Cloud, however, Terraform supports a variety
 of platforms including (amongst others): AWS, GCP, and Azure DevOps. Using
 Terraform across platforms is a pleasant experience because of the universal
-yntax across all target platforms and the ability to hook into variables
+syntax across all target platforms and the ability to hook into variables
 from one platform to another using Terraform’s symbolic naming of resources.
 This can be advantageous if a particular workload on one cloud platform needs
 to integrate to a workload on another cloud platform.
@@ -168,4 +168,6 @@ Both have extensive community and commercial support. Terraform is backed by
 Hashicorp commercially and Microsoft is supports it through various means such
 as documentation and tutorials. Bicep is backed by Microsoft commercially and
 is natively supported by the Azure CLI and PowerShell Azure cmdlets. Both are
-open source and allow changes to various artefacts.
+open source and allow changes to various artifacts.
+
+I hope you enjoyed this post and thank you for reading.
