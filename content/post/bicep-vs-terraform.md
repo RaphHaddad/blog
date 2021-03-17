@@ -1,7 +1,7 @@
 ---
 title: 'Bicep vs Terraform'
 date: 2021-03-17T00:00:00.000+10:00
-draft: true
+draft: false
 tags : [agile, azure devops, Infrastructure as Code]
 ---
 
