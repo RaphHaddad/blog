@@ -124,13 +124,13 @@ will be mentioned further on.
 
 ## Deployment Methods
 
-Bicep templates are similar to ARM Templates in that they are incremental.
-That is, resources are incrementally added to their targets (resource groups
+Bicep templates are similar to ARM Templates in that they are incremental (by
+default). That is, resources are incrementally added to their targets (resource groups
 or subscriptions) and if a resource is deleted from a template and the template
 is redeployed, then the code-deleted resource won’t be deleted on Azure Cloud.
 
 Terraform deploys differently, the state on Azure Cloud must match exactly
-what is on the code (exact state). That is, if a resource is deleted on the
+what is on the code (exact/complete state by default). That is, if a resource is deleted on the
 code templates, they will be deleted on the target. This is one reason (amongst
 many) why Terraform needs its own persistent storage to store state.
 
@@ -146,7 +146,14 @@ see [this Terraform
 documentation](https://www.terraform.io/docs/language/state/sensitive-data.html)
 that explains the importance of treating state as sensitive data) and a higher
 risk of accidental deletion of resources (albeit can be reduce by using the
-[lifecycle meta-argument](https://www.terraform.io/docs/language/meta-arguments/lifecycle.html)). 
+[lifecycle
+meta-argument](https://www.terraform.io/docs/language/meta-arguments/lifecycle.html)).
+
+Bicep (and subsequently ARM) does actually have the ability to do exact/complete
+state deployments, however, the features aren't as extensive as Terraform's.
+Specifically, Bicep deployment (on complete mode) can only be scoped to the
+resource group level. Please [see this Microsoft documentation](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-modes) for more
+information.
 
 Due to Terraform’s ability to manage state, the executor of a Terraform template
 can review changes prior to them being deployed into an environment. This means
