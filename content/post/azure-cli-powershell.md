@@ -1,6 +1,6 @@
 ---
 title: 'Azure CLI within PowerShell'
-date: 2021-04-07T00:00:00.001+11:00
+date: 2021-04-10T00:00:00.001+11:00
 draft: false
 tags : [DevOps, Azure, Azure DevOps, Cloud, PowerShell]
 ---
