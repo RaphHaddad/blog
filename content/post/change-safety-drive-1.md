@@ -6,12 +6,11 @@ tags : [lean, agile, culture]
 ---
 
 People can only endure a certain number of 'agile' or 'digital' transformations
-before they become disenfranchised with any change within an organisation.
-Change, although inevitable and necessary, needs to be reasoned and if possible,
-measured. If people are constantly being forced to change, especially if that
-change is not explained or unreasonable, then they will experience a level of
-change fatigue that will form cynicism and bitterness with their leaders and the
-wider organisation.
+before they become disenfranchised with any change.  Change, although inevitable
+and necessary, needs to be reasoned and if possible, measured. If people are
+constantly being forced to change, especially if that change is not explained or
+unreasonable, then they will experience a level of change fatigue that will form
+cynicism and bitterness with their leaders and the wider organisation.
 
 Change, especially good change is necessary for any high performing team or
 organisation. The challenge is to maintain a level of safety when change occurs
@@ -41,7 +40,7 @@ communique to avoid:
 
 > The synergy alignment between the capabilities that drive innovation has been
 affected by the current macroeconomic environment which means a reduction in
-head count across departments
+overall head count across departments
 
 Instead, try:
 
@@ -53,12 +52,12 @@ attempt this behaviour.
 
 ## Avoid the Perception of Change
 
-All too often in 'agile' transformations are just a means to rename half the
-project managers to product owners and the other half to scrum masters. This
-doesn't solve the underlying reasons of having a transformation in the first
-place, but just creates a perception of change. In addition to this, there are
-many things that create a perception of change these include (amongst other
-things): renaming job titles, more social events, more beer or chocolate in the
-kitchen, and more noise. All these things, although important, do not contribute
-to a lasting and real positive change, they are often facades or worse, a
-perception of positive change.
+All too often 'agile' transformations do not change an underlying culture or
+ways of working of an organisation, but only superficial things. Examples
+include (amongst other things): renaming job titles, more social events, more
+beer or chocolate in the kitchen, and more noise. All these things, although
+important, do not contribute to lasting and real positive change, they are often
+facades or worse, a perception of positive change.
+
+The perception of change may take attention away from the need to change, and
+this may derail the required objectives.
