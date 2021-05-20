@@ -95,7 +95,7 @@ explanation:
 
 - Public: This is data that has intentionally been made public for the interest
   of the wider community. It may include research findings, press releases, and
-  simply marketing for a product; 
+  simply marketing for a product;
 - PII (Personally Identifiable Information): This is data that can identify a
   person, or that is identifying. This may include things like date of birth,
   address, full name, tax file number, and social security number;
