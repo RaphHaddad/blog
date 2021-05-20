@@ -112,4 +112,6 @@ security and auditing associated with the systems that house that data.
 
 
 Finally, thanks for reading this post! I hope it helped you clarify some of the
-cyber security jargon that (we) IT Professionals use.
+cyber security jargon that (we) IT Professionals use. I hope you use this post as a reference point
+for whenever jargon is throw at you, so that when this jargon is used, you can act, respond, and make
+decisions in an informed manner.
