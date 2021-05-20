@@ -7,7 +7,7 @@ tags : [security]
 
 IT Professionals are guilty of using complicated jargon for things that can be
 explained in a simpler fashion. This post will attempt to clear up cyber
-security phrases that are casually thrown about by IT professionals. It’s aim is
+security phrases that are casually thrown about by IT professionals. Its aim is
 to educate non-technical people to make informed cyber security decisions.
 
 ## Identity
@@ -17,7 +17,7 @@ that reveals information about a real life human.
 
 For example: a person may have a Facebook account, Twitter account, and a Gmail
 account. All three of these accounts are “Identities” even though they belong to
-a single person. The identities a user has online often do not know about each
+a single person. The identities a human owns online often do not know about each
 other.
 
 It is important to highlight that a person’s identity online can be faked. That
@@ -39,7 +39,7 @@ external service or system that enables logging in and logging out.
 ## Authentication
 
 When a person authenticates, they are proving to the challenging system that
-they are who they are claiming. Often, this is in the form of an Identity, with
+they are who they are claiming. Often, this is in a form of an Identity, with
 a set of credentials. These credentials are typically a username and password.
 
 When an IT professional refers to “authentication” they are often referring to
@@ -49,7 +49,7 @@ valid and correct.
 ## Authorisation
 
 Where authentication is the proof that a person is the one to whom they are
-claiming. Authorisation is the activity of a challenging system that that person
+claiming. Authorisation is the activity of a challenging system that a specific person
 is able to access a specific resource.
 
 When IT professionals talk about authorisation, they are typically referring to
