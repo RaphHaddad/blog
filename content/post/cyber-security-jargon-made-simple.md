@@ -1,5 +1,5 @@
 ---
-title: 'Cyber Security Jargon Made Simple'
+title: 'Demystifying Cyber Security Jargon'
 date: 2021-05-20T00:00:00.000+00:00
 draft: true
 tags : [security]
