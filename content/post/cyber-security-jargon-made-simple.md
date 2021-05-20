@@ -6,7 +6,7 @@ tags : [security]
 ---
 
 IT Professionals are guilty of using complicated jargon for things that can be
-explained in a simpler fashion. This post will attempt to clear up cyber
+explained in a simpler fashion. This post will attempt to demystify cyber
 security phrases that are casually thrown about by IT professionals. Its aim is
 to educate non-technical people to make informed cyber security decisions.
 
