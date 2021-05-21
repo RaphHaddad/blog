@@ -11,7 +11,7 @@ security phrases that are casually thrown about by IT professionals. Its
 eventual aim is to educate and aid non-technical people to make informed cyber
 security decisions.
 
-![Confused Person Source: https://depositphotos.com](/images/confused-person.png "Confused Person Source: https://depositphotos.com")
+![Confused Person Source: https://depositphotos.com](/images/confused-person.jpg "Confused Person Source: https://depositphotos.com")
 
 ## Identity
 
