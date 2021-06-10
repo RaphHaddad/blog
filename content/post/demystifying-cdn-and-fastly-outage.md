@@ -72,7 +72,7 @@ are often constructed with a lot more logic associated with them, whereas static
 content routes are often simple and have a level of determinism.
 
 Each additional dependant server and each additional code execution adds time to
-a web page load which may result in a degraded user experience.
+a web page load, which may result in a degraded user experience.
 
 Static content is different than dynamic content, it does not need additional
 code execution or dependant servers, and often, having the same servers deal
