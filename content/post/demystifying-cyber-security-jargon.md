@@ -2,7 +2,7 @@
 title: 'Demystifying Cyber Security Jargon'
 date: 2021-05-21T00:00:00.000+10:00
 draft: false
-tags : [security]
+tags : [security, demystifying]
 ---
 
 IT Professionals are guilty of using complicated jargon for things that can be
