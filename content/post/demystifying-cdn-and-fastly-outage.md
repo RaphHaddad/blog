@@ -26,7 +26,7 @@ it suggests that a large portion of the internet was using those services.
 ## Context (How a Web Page is Loaded)
 
 Before any explanation of CDN is attempted, an explanation of how a page is
-loaded on a browser is needed in order to provide context.
+loaded on a browser (like Chrome, Edge, or Safari) is needed in order to provide context.
 
 When a human goes to a website such as `https://blog.raph.ws` a series of other
 requests is sent to a collection of computers (called servers). These requests
