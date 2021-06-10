@@ -62,19 +62,20 @@ load the entire web page. This is because *when*
 new content is available is unknown to the human sending that request, so each
 and every dependant server is needed to return accurate content.
 
-In addition to this overhead, dynamic content needs to go through a set of code
-'execution paths'. An execution path is code that needs to be run in order to
-return a correct result. An example of an execution path is determining which
-code to execute depending on the route requested. A route is anything that comes
-after a domain name. For example: on the address bar of this browser, anything
-that comes after `https://blog.raph.ws/` is considered a 'route'. So an
-execution path to determine the correct code to execute, is executed.
+In addition to this overhead, dynamic content needs to execute more code than
+static content. For example: determining which
+content to return depending on the route requested (a route is anything that comes
+after a domain name; on the address bar of this browser, anything
+that comes after `https://blog.raph.ws/` is considered a 'route').
+Routes are a lot more complicated in dynamic content types because they
+are often constructed with a lot more logic associated with them, whereas static
+content routes are often simple and have a level of determinism.
 
-Each additional dependant server and each additional execution path adds time to
+Each additional dependant server and each additional code execution adds time to
 a web page load which may result in a degraded user experience.
 
 Static content is different than dynamic content, it does not need additional
-execution paths or dependant servers, and often, having the same servers deal
+code execution or dependant servers, and often, having the same servers deal
 with both static content and dynamic content adds an overhead associated when
 dealing with static content. This is why having a CDN that's optimised for
 static content becomes important to performance. CDNs do not have all the
@@ -97,7 +98,7 @@ human, the quicker the content will be retrieved. For example: if a human in
 Sydney, Australia is requesting the same content from servers in Melbourne,
 Australia and New York, USA (and all other things being equal apart from this
 one variable); then that content will be delivered to by the server in
-Melbourne, Australia more quickly 
+Melbourne, Australia more quickly.
 
 ### Browser Caching
 
