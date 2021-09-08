@@ -1,8 +1,8 @@
 ---
-title: 'A Compendium on Software Versioning'
-date: 2021-09-07T00:00:00.000+10:00
+title: 'Demystifying Software Versioning'
+date: 2021-09-09T00:00:00.000+10:00
 draft: false
-tags : [agile, devops]
+tags : [agile, devops, demystifying]
 ---
 
 Commit hashes, build versions, backwards compatibility, forwards compatibility,
@@ -10,17 +10,20 @@ package versions. Version 1, 2, 2.5, or
 110319504efd76a2bbadd61af4c46562577bd15d.
 
 The list goes on, and the jargon more vague as our industry matures. For many
-within software development (both technical and non-technical) this can become
-overwhelming. In this post, I've attempted to make concise the most common forms
-of versioning in the hope that it will help cut through the jargon, and
-streamline understanding of versioning within software delivery.
+within software product development (both technical and non-technical) this can
+become overwhelming. In this post, I've attempted to make concise the most
+common forms of versioning in the hope that it will help cut through the jargon,
+and streamline understanding of versioning within software delivery.
+
+<sub>Recently, I've written many posts that attempt to make technical concepts
+more accessible to the general public. They can all be found under the hash tag [demystifying](http://localhost:1313/tags/demystifying/) on this blog.<sub>
 
 ## Versioning
 
 <sub>Feel free to skip this section if a general explanation on versioning is
 not required.<sub>
 
-When an artifact or asset is versioned; be it code, a document, or even a
+When an artifact or asset is versioned, such as: code, a document, or even a
 material object; the state of it, at that particular time is persisted. These
 two attributes: the state of the artifact and the time of which it is captured
 means that every single version of an asset is unique.
@@ -39,9 +42,10 @@ Version 2, Version 3, so on and so forth. Or a decimal which incorporates a
 date. For example the [Ubuntu](https://ubuntu.com/) versioning format: 4.10,
 21.04, 21.10.
 
-Different formats may present different things, such as backwards compatibility,
-the type of fix (patch or bug fix), or new features. For example if a version
-goes from `1.2` to `2.0` it may mean a lack of backwards compatability. 
+Different formats may represent different things, such as backwards
+compatibility, the type of fix (patch or bug fix), or new features. For example
+if a version goes from `1.2` to `2.0` it may mean a lack of backwards
+compatability.
 
 In an effort to make version formats uniform. Our industry has created multiple
 standards like: SemVer or CalVer. Ironically, a creation of a new standard
@@ -64,9 +68,9 @@ easily navigate code at different versions with a low level of effort.
 
 Code is compiled into either bytecode or binary code in order to be interpreted
 and executed by a computer's CPU. In software engineering workflows, it is
-important to run a series of black-box tests on a package (or build) version not
-a version of the code in order to validate its correctness. As it is the package
-that is deployed into a target, and not the version of the code.
+important to run a series of black-box tests on a package (or build) version,
+not a version of the code in order to validate its correctness. As it is the
+package that is deployed into a target, and not the version of the code.
 
 Whilst there is a degree of determinism when a specific code version is compiled
 into a package to be executed, there are several scenarios which may affect the
@@ -83,7 +87,7 @@ including (amongst others):
 - Other intermittent issues that may occur in the compilation phase.
 
 With ephemeral computing on the rise, the issues above may occur more
-frequently, and such it's important for any development team to pay close
+frequently, and such it's important for any engineering team to pay close
 attention to package versions.
 
 ## Release Version
@@ -91,12 +95,11 @@ attention to package versions.
 The scenario described above of deploying packages instead of code, brought
 about the rise of the pattern of "build once, deploy everywhere". What this
 means, is that the same package is deployed to the public as the one deployed
-into internal, controlled environment targets, such as a QA (Quality Assurance)
-environment. In order to be able to use the same package to deploy into
-different environments, certain variables need to be changed on deployment time
-(for example the URL of an email server). As such, the state of these variables
-are often set by creating a 'Release'. This is where a release version is often
-used.
+into internal, controlled targets, such as a QA (Quality Assurance) environment.
+In order to be able to use the same package to deploy into different
+environments, certain variables need to be changed on deployment time (for
+example the URL of an email server). The state of these variables are often set
+by creating a 'Release'. This is where a release version is often used.
 
 ## Friendly Names
 
@@ -117,11 +120,12 @@ strategy focussed on animals. For example: Groovy Gorilla (which has the version
 
 In software, there are many layers of versioning involved depending on the stage
 of delivery, and it is important to ensure reliable and accurate traceability
-between these layers. For example: which release belongs to which package, and
-which package belongs to which source version.  Versioning should be a simple
-exercise that is done through automated means.
+between these layers and their versions. For example: which release belongs to
+which package, and which package belongs to which source version.  Versioning
+should be an exercise that is done through automated means and as part of an
+engineer's usual workflow.
 
-The reliance of automated tools to enable this is important, and without an
-understanding of which version belong to which artifact at a particular stage
-one can loose track and become overwhelmed. I hope that this post has clarified
-and made it easier to understand
+Finally, there must be a common understanding of versioning across technical and
+non-technical people in order to support a culture of collaboration that is
+focussed on knowing which versions contain which features, bugs, fixes, or
+experiments that will be presented to a product's customers.
