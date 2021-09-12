@@ -1,6 +1,6 @@
 ---
 title: 'Demystifying Software Versioning'
-date: 2021-09-09T00:00:00.000+10:00
+date: 2021-09-13T00:00:00.000+10:00
 draft: false
 tags : [agile, devops, demystifying]
 ---
