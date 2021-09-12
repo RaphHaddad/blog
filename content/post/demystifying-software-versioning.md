@@ -20,7 +20,7 @@ more accessible to the general public. They can all be found under the hash tag 
 
 ## Versioning
 
-<sub>Feel free to skip this section if a general explanation on versioning is
+<sub>Feel free to skip this section if a general explanation of versioning is
 not required.<sub>
 
 When an artifact or asset is versioned, such as: code, a document, or even a
@@ -67,17 +67,19 @@ easily navigate code at different versions with a low level of effort.
 ## Package Version
 
 Code is compiled into either bytecode or binary code in order to be interpreted
-and executed by a computer's CPU. In software engineering workflows, it is
-important to run a series of black-box tests on a package (or build) version,
-not a version of the code in order to validate its correctness. As it is the
-package that is deployed into a target, and not the version of the code.
+and executed by a computer's CPU (Central Processing Unit). In software
+engineering workflows, it is important to run a series of black-box tests on a
+package (or build) version, not a version of the code in order to validate its
+correctness. As it is the package that is deployed into a target, and not the
+version of the code.
 
 Whilst there is a degree of determinism when a specific code version is compiled
 into a package to be executed, there are several scenarios which may affect the
 behaviour of the package itself. That is: the same code version may be compiled
 into two or more packages over time that behave differently on the same
 deployment target. Although this scenario is rare, the possibility of it
-occurring is present. Several variables may change a package's behaviour
+occurring is present. Several variables may change a package's (created from the
+same code) behaviour
 including (amongst others):
 
 - Compiler version;
@@ -109,7 +111,7 @@ unique. As such, versioning strategies and labels have to be unique as well.
 Often, unique hashes or decimals are used in order to capture that uniqueness,
 however, the disadvantage is that the identification of a specific version
 becomes difficult for humans to identify. Generally, humans find it easier to
-remember words not decimals.
+remember words and things, not decimals or random sequences of characters.
 
 As such, software is often created with code names or human-friendly names. A
 great example of this is the Ubuntu operating system which uses a naming
@@ -128,4 +130,5 @@ engineer's usual workflow.
 Finally, there must be a common understanding of versioning across technical and
 non-technical people in order to support a culture of collaboration that is
 focussed on knowing which versions contain which features, bugs, fixes, or
-experiments that will be presented to a product's customers.
+experiments that will be presented to a product's customers. This
+post attempts aid in this common understanding by helping to make this clearer.
