@@ -5,9 +5,10 @@ draft: false
 tags : [agile, devops, demystifying]
 ---
 
-Commit hashes, build versions, backwards compatibility, forwards compatibility,
-package versions. Version 1, 2, 2.5, or
-110319504efd76a2bbadd61af4c46562577bd15d.
+Commit hashes, build versions, [backwards
+compatibility](https://en.wikipedia.org/wiki/Backward_compatibility), [forwards
+compatibility](https://en.wikipedia.org/wiki/Forward_compatibility), package
+versions. Version 1, 2, 2.5, or 110319504efd76a2bbadd61af4c46562577bd15d.
 
 The list goes on, and the jargon more vague as our industry matures. For many
 within software product development (both technical and non-technical) this can
@@ -20,9 +21,6 @@ more accessible to the general public. They can all be found under the hash tag 
 
 ## Versioning
 
-<sub>Feel free to skip this section if a general explanation of versioning is
-not required.<sub>
-
 When an artifact or asset is versioned, such as: code, a document, or even a
 material object; the state of it, at that particular time is persisted. These
 two attributes: the state of the artifact and the time of which it is captured
@@ -30,9 +28,7 @@ means that every single version of an asset is unique.
 
 In the context of digital assets, a version can be created on a very basic level
 by creating multiple copies of a file (for example: a word document), so that
-one can backtrack to a previous state. Versioning is not limited to digital
-assets and may be done in other disciplines as well, like translations of a
-document from one language to another.
+one can backtrack to a previous state.
 
 ## Formatting
 
@@ -48,8 +44,9 @@ if a version goes from `1.2` to `2.0` it may mean a lack of backwards
 compatability.
 
 In an effort to make version formats uniform. Our industry has created multiple
-standards like: SemVer or CalVer. Ironically, a creation of a new standard
-almost never results in the uniformity of practice.
+standards like: Semantic Versioning, known as SemVer and Calendar Versioning,
+known as CalVer. Ironically, a creation of a new standard almost never results
+in the uniformity of practice.
 
 ![Competing standards](/images/competing-standards.png)
 
@@ -57,12 +54,13 @@ almost never results in the uniformity of practice.
 
 Code versioning, at a basic level, is the state of code at a particular time.
 Prior to the introduction of modern source control tools, software engineers
-would make copies of code files for each version. With the introduction of [code
-revision tools](https://en.wikipedia.org/wiki/Version_control) like SVN or GIT
-the creation of different states at different times becomes automated. An
-engineer would modify code, and create a revision (or commit). The revision
-software takes care of the different versions of the code and an engineer can
-easily navigate code at different versions with a low level of effort.
+would make copies of code files for each version. With the introduction of
+[source control tools](https://en.wikipedia.org/wiki/Version_control) like SVN
+or GIT the creation of different states at different times becomes automated. An
+engineer would modify code, and create a revision (often referred to as a
+commit). The revision software takes care of the different versions of the code
+and an engineer can easily navigate code at different versions with a low level
+of effort.
 
 ## Package Version
 
@@ -74,16 +72,14 @@ correctness. As it is the package that is deployed into a target, and not the
 version of the code.
 
 Whilst there is a degree of determinism when a specific code version is compiled
-into a package to be executed, there are several scenarios which may affect the
-behaviour of the package itself. That is: the same code version may be compiled
-into two or more packages over time that behave differently on the same
-deployment target. Although this scenario is rare, the possibility of it
-occurring is present. Several variables may change a package's (created from the
-same code) behaviour
-including (amongst others):
+into a package to be executed, there are situations which may affect the
+behaviour of the package itself. Although these situations are rare, the
+possibility of them occurring is present. Several variables may change a
+package's (created from the same code) behaviour including (amongst others):
 
 - Compiler version;
 - Dynamic Configuration changes;
+- Changes in external dependencies;
 - The use of random numbers for certain algorithms within code (such as a
   cryptographic seed); and/or
 - Other intermittent issues that may occur in the compilation phase.
