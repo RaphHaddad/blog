@@ -5,9 +5,9 @@ draft: false
 tags : [agile, devops, demystifying]
 ---
 
-Commit hashes, build versions, [backwards
-compatibility](https://en.wikipedia.org/wiki/Backward_compatibility), [forwards
-compatibility](https://en.wikipedia.org/wiki/Forward_compatibility), package
+Commit hashes, build versions, backwards
+compatibility, forwards
+compatibility, package
 versions. Version 1, 2, 2.5, or 110319504efd76a2bbadd61af4c46562577bd15d.
 
 The list goes on, and the jargon more vague as our industry matures. For many
@@ -39,9 +39,9 @@ date. For example the [Ubuntu](https://ubuntu.com/) versioning format: 4.10,
 21.04, 21.10.
 
 Different formats may represent different things, such as backwards
-compatibility, the type of fix (patch or bug fix), or new features. For example
-if a version goes from `1.2` to `2.0` it may mean a lack of backwards
-compatability.
+compatibility (whether the current version is compatible with a previous
+version), the type of fix (patch or bug fix), or new features. For example if a
+version goes from `1.2` to `2.0` it may mean a lack of backwards compatability.
 
 In an effort to make version formats uniform. Our industry has created multiple
 standards like: Semantic Versioning, known as SemVer and Calendar Versioning,
@@ -53,14 +53,14 @@ in the uniformity of practice.
 ## Code Version
 
 Code versioning, at a basic level, is the state of code at a particular time.
-Prior to the introduction of modern source control tools, software engineers
-would make copies of code files for each version. With the introduction of
-[source control tools](https://en.wikipedia.org/wiki/Version_control) like SVN
-or GIT the creation of different states at different times becomes automated. An
-engineer would modify code, and create a revision (often referred to as a
-commit). The revision software takes care of the different versions of the code
-and an engineer can easily navigate code at different versions with a low level
-of effort.
+Prior to the introduction of modern [source control
+tools](https://en.wikipedia.org/wiki/Version_control), software engineers would
+make copies of code files for each version. With the introduction of these
+source control tools like SVN or GIT, the creation of different states at
+different times becomes automated. An engineer would modify code, and create a
+revision (often referred to as a commit). The tool then takes care of
+the different versions of the code and an engineer can easily navigate code at
+different versions.
 
 ## Package Version
 
@@ -85,7 +85,7 @@ package's (created from the same code) behaviour including (amongst others):
 - Other intermittent issues that may occur in the compilation phase.
 
 With ephemeral computing on the rise, the issues above may occur more
-frequently, and such it's important for any engineering team to pay close
+frequently, as such it's important for any engineering team to pay close
 attention to package versions.
 
 ## Release Version
@@ -123,8 +123,10 @@ which package, and which package belongs to which source version.  Versioning
 should be an exercise that is done through automated means and as part of an
 engineer's usual workflow.
 
-Finally, there must be a common understanding of versioning across technical and
-non-technical people in order to support a culture of collaboration that is
-focussed on knowing which versions contain which features, bugs, fixes, or
-experiments that will be presented to a product's customers. This
-post attempts aid in this common understanding by helping to make this clearer.
+Organisationally, there must be a common understanding of versioning across
+technical and non-technical people in order to support a culture of
+collaboration that is focussed on knowing which versions contain which features,
+bugs, fixes, or experiments that will be presented to a product's customers.
+This post aids in this common understanding by making
+versioning and jargon associated with it clearer and more accessible to a wider
+range of people.
