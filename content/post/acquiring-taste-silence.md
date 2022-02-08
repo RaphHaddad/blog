@@ -1,6 +1,6 @@
 ---
 title: 'Acquiring the Taste of Silence'
-date: 2021-02-08T00:00:00.000+11:00
+date: 2022-02-08T00:00:00.000+11:00
 draft: false
 tags : [agile]
 ---
