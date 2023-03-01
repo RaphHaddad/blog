@@ -2,7 +2,7 @@
 title: 'Python to Automate Azure Deployments'
 date: 2021-03-16T00:00:00.001+11:00
 draft: false
-tags : [DevOps, Azure, Azure DevOps, Cloud]
+tags : [DevOps, Azure, Azure DevOps, Cloud, python]
 ---
 
 During a review of a previous blog post, my colleague [Paul Glavich](https://weblogs.asp.net/pglavich) asked me to

@@ -2,7 +2,7 @@
 title: 'DevSecOps on Azure using Terraform and Python'
 date: 2021-02-28T00:00:00.001+11:00
 draft: false
-tags : [azure devops, azure cloud, devops]
+tags : [azure devops, azure cloud, devops, python]
 ---
 
 This post will demonstrate how to create a segregated Azure Cloud environment (a
